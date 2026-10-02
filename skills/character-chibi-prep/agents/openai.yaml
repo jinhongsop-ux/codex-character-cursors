@@ -1,0 +1,4 @@
+interface:
+  display_name: "角色Q版化前置"
+  short_description: "将漫画或原生动画角色转为一致的二维Q版形象并衔接完整光标包制作"
+  default_prompt: "使用 $character-chibi-prep 将我的角色参考图转换成2D Q版形象，再调用 $character-cursor-pack 制作完整光标皮肤。"

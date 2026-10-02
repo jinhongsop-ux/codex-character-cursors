@@ -1,0 +1,4 @@
+interface:
+  display_name: "角色光标完整安装包"
+  short_description: "原图保色裁切或原创角色制作，输出带中文安装和通用恢复的完整光标包"
+  default_prompt: "使用 $character-cursor-pack 按 V1.5 流程制作角色光标完整包，包含中文使用说明、安装和通用白色小号恢复。"
