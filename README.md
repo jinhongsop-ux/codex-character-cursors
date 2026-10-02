@@ -2,6 +2,10 @@
 
 把喜欢的角色做成 Windows 鼠标光标。这里可以下载已经做好的皮肤，也可以使用 Codex Skills，把自己的参考图变成一套光标。
 
+[打开在线预览与下载](https://codex-character-cursors.vercel.app) · [下载合集工作台](https://codex-character-cursors.vercel.app/downloads/character-cursor-studio-v1.1.1.zip)
+
+在线页面可以切换五款角色、查看各状态、调整预览大小，并直接下载完整安装包。应用到 Windows 时，请使用下载包中的本地安装脚本和调节器。
+
 ## 成品光标
 
 点击「完整安装包」下载，点击「状态预览」查看角色在选择、输入、等待、移动和调整窗口大小等状态下的样子。

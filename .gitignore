@@ -10,3 +10,4 @@ studio/package/CursorStudio.exe
 studio/package/web/
 studio/package/themes/
 studio/package/*.cmd
+.env*
