@@ -2,6 +2,9 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
+.vercel/
+site/public/
+node_modules/
 
 studio/package/CursorStudio.exe
 studio/package/web/
