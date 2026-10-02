@@ -1,107 +1,87 @@
 # Codex Character Cursors
 
-上传一张角色参考图或状态拼图，用 Codex 制作个性化 Windows 鼠标光标。非 Q 版角色可先转换成 2D Q 版，再制作光标皮肤。
+把喜欢的角色做成 Windows 鼠标光标。这里可以下载已经做好的皮肤，也可以使用 Codex Skills，把自己的参考图变成一套光标。
 
-## 新成品：Zero Two（零二） Q 版光标 V1.5
+## 成品光标
 
-[下载完整安装包](packs/ZeroTwo-Q版光标-Windows-V1.5.zip) · [查看16状态预览](previews/pink-horn.png) · [查看Q版基准](previews/pink-horn-chibi.png)
+点击「完整安装包」下载，点击「状态预览」查看角色在选择、输入、等待、移动和调整窗口大小等状态下的样子。
 
-这次样本先用 `character-chibi-prep` 将两张动漫参考转换成 Q 版，再用 `character-cursor-pack` 制作完整光标皮肤。包内保留原参考、已确认的 Q 版基准及生成提示词。
+| 角色 | 基础形象 | 完整安装包 | 状态预览 |
+|---|:---:|---|---|
+| 蕾塞 · V1.5 | <img src="previews/characters/reze.png" alt="蕾塞基础形象" width="120"> | [下载](packs/蕾塞光标-Windows-V1.5.zip) | [查看](previews/reze.png) |
+| 蕾姆 · V1.2.1 | <img src="previews/characters/rem.png" alt="蕾姆基础形象" width="120"> | [下载](packs/RemCursor-Windows-v1.2.1.zip) | [查看](previews/rem.png) |
+| deepseek酱 · V1.5 | <img src="previews/characters/deepseek.png" alt="deepseek酱基础形象" width="120"> | [下载](packs/deepseek酱光标-样本-V1.5.zip) | [查看](previews/deepseek.png) |
+| Pochita Mini · V1.5 | <img src="previews/characters/pochita.png" alt="Pochita Mini基础形象" width="120"> | [下载](packs/Pochita-Mini光标-V1.5.zip) | [查看](previews/pochita.png) |
+| Zero Two（零二）· V1.5 | <img src="previews/characters/zero-two.png" alt="Zero Two零二基础形象" width="120"> | [下载](packs/ZeroTwo-Q版光标-Windows-V1.5.zip) | [查看](previews/pink-horn.png) |
 
-- 16 项贴图、17 个 Windows 系统角色；缩放状态使用围绕居中人物的独立三角箭头。
-- 默认 **64 个屏幕物理像素**，内置32/48/64/96/128/192六档CUR；附带网页大小调节器，可输入16–256像素。
-- 完整解压后双击 **一键安装.cmd**，直接应用光标；双击 **打开大小调节.cmd** 可预览并调整。此入口便携运行，需要保留解压目录。
-- 附带系统默认、白色小号、安装前备份恢复脚本和使用说明。重复安装保留首次备份，不叠加放大。
-- 本机验证17个角色的像素/热点、重复安装、备份恢复，以及网页83像素应用；未声称其他电脑均已测试。
+### 怎么使用
 
-这是独立皮肤包，尚未加入下面四款合集工作台的角色列表。
+1. 下载喜欢的角色安装包，**完整解压**到一个文件夹。
+2. 双击包内的 **一键安装.cmd**，按提示应用光标。
+3. 想换回系统光标时，运行包内的恢复脚本。具体选项见随包的使用说明。
 
-## 最新版：光标工作台 V1.1.1
+不同安装包的恢复选项有所区别：「恢复系统默认」切换到系统白色默认方案；「恢复安装前配置」还原备份。蕾姆旧版的「一键恢复原状」使用安装前备份。
 
-[下载完整安装包](packs/角色光标工作台-WebUI-V1.1.1.zip)
+## 调整光标大小
 
-一个在本机运行的 Web UI，内置蕾塞、蕾姆、deepseek酱、Pochita Mini 四款角色。可以输入 16–256 的整数像素，预览各状态和深浅背景，再应用到 Windows。
+[下载角色光标工作台 · V1.1.1](packs/角色光标工作台-WebUI-V1.1.1.zip)
 
-### 安装和使用
+工作台在本机浏览器中打开，内置**蕾塞、蕾姆、deepseek酱、Pochita Mini**。可以切换角色、查看深浅背景下的效果，输入 **16–256 像素**的大小，再点击 **应用到系统**。
 
-1. 下载 ZIP，完整解压。
-2. 双击 **一键安装.cmd**。安装到 `%LOCALAPPDATA%\CharacterCursorStudio\app`，创建开始菜单快捷方式并打开网页，无需管理员权限。
-3. 选择角色、调整大小，点击 **应用到系统**。
+**零二的大小调节器在零二安装包内**，双击 **打开大小调节.cmd** 即可使用，需要保留解压后的文件夹。
 
-之后从开始菜单打开“角色光标工作台”即可。安装后可删除原解压目录。也可双击 **启动光标工作台.cmd** 便携运行，这种方式需要保留解压目录。
+### 安装工作台
 
-使用安装包不需要 Python、Node 或联网，依赖 Windows 自带的 .NET Framework。关闭网页后服务继续在托盘运行，可从托盘菜单退出。
+1. 完整解压工作台安装包，双击 **一键安装.cmd**。
+2. 网页打开后，选择角色和大小，点击 **应用到系统**。
+3. 以后从开始菜单打开「角色光标工作台」即可，安装后可以删除下载包的解压文件夹。
 
-### 大小与画质
+也可以双击 **启动光标工作台.cmd** 便携运行；这种方式需要保留解压文件夹。使用工作台无需安装 Python 或 Node，也不需要联网，运行环境为 Windows 10/11 和 .NET Framework。
 
-输入的大小是**整个光标画布的屏幕物理像素**，包含透明留白，不等于人物身高。预览按浏览器像素比换算，右侧显示本机系统箭头的可见范围。
+大小数字表示**整个光标画布的屏幕物理像素**，包含透明留白，人物本身会比这个数字小。角色素材是位图，放大后细节会受到原始素材分辨率的限制。
 
-V1.1 修复了系统额外放大的问题：旧版注册表和资源都显示 32，但运行中的基础大小仍是 128，实际显示被再次放大四倍。现在应用和恢复会同步运行中的基础大小，避免叠加放大和由此造成的模糊。
+### 换回系统光标
 
-蕾塞使用原图非生成式裁切的透明素材，保留原色；蕾姆从原始姿势素材合成。修正重复缩放和边缘插值。角色是位图，普通放大不会创造新的细节。
+工作台提供两种一键恢复脚本，也可以用于其他角色光标包：
 
-### 一键恢复
+- **一键恢复系统默认.cmd**：恢复系统白色默认方案和默认大小。
+- **一键恢复系统白色小号.cmd**：切换到 24×24 像素的白色小号光标。
 
-- **一键恢复系统默认.cmd**：恢复系统白色方案、辅助功能大小 1，并清除运行中的额外放大倍率。
-- **一键恢复系统白色小号.cmd**：使用自定义 24×24 画布，并清除额外倍率。24 并非 Windows 标准默认大小。
+这两种选项都会清除残留的额外放大倍率。白色小号是自定义尺寸，与系统默认尺寸不同。
 
-两份恢复脚本可以独立运行，也可用于其他角色光标包。它们恢复指定的系统白色设置，不是恢复用户安装前的私人配置，不删除原成品或备份。
+### 网页没有打开？
 
-本机测得默认箭头 32×32 画布的可见范围约 12×19，小号 24×24 画布约 9×15；其他电脑以界面实测为准。
+请先确认安装包已完整解压，使用包内配套的脚本和程序。浏览器无法自动打开时，启动提示会提供本地网页地址，可复制到浏览器访问。
 
-### 如果安装或启动失败
+安装错误可查看 `%LOCALAPPDATA%\CharacterCursorStudio\install-log.txt`；启动错误可查看同目录的 `launch-log.txt`。重新登录后若大小变化，打开工作台重新应用即可。
 
-完整解压后使用最新版 **一键安装.cmd**，不要只替换旧脚本。V1.1.1 补齐了固定目录安装、快捷方式及浏览器启动回退。
+## 用自己的角色制作光标
 
-- 安装错误日志：`%LOCALAPPDATA%\CharacterCursorStudio\install-log.txt`。
-- 启动错误日志：`%LOCALAPPDATA%\CharacterCursorStudio\launch-log.txt`（发生启动错误时生成）。
+仓库提供两个 [Codex Skills](skills)。将对应文件夹复制到自己的 Codex skills 目录，通常是 `~/.codex/skills/`。
 
-如果默认浏览器无法启动，会尝试已安装的 Edge 或 Chrome；仍无法打开时会显示本地网页地址。
+| Skill | 用途 |
+|---|---|
+| [character-chibi-prep](skills/character-chibi-prep/SKILL.md) | 把动漫、漫画等非 Q 版参考角色转换为 2D Q 版基础形象。 |
+| [character-cursor-pack](skills/character-cursor-pack/SKILL.md) | 制作角色光标，输出 16 项状态贴图、17 个 Windows 光标角色映射、预览和中文安装包。 |
 
-### 验证与限制
+上传参考图后，可以对 Codex 说：
 
-本机验证了四款角色、17 个系统状态的像素和热点，32/64 的屏幕捕获、16/256 边界、重复应用和两种恢复，以及中文和空格路径下的安装、自动打开网页。
+> 使用 $character-chibi-prep 把这个角色转换成 Q 版，确认形象后，再使用 $character-cursor-pack 制作 Windows 光标皮肤。
 
-运行时基础大小同步使用 Windows 10/11 未公开文档化的 `0x2028/0x2029` 调用，工作台会探测并读回验证，不支持时明确报错。未声称所有电脑或 Windows 版本都已测试。重新登录或系统重载方案后可能重新选择标准帧，需要重新应用所需大小；应用自行绘制的指针不受本工具控制。
+已经有 Q 版形象或完整状态图时，可以直接调用 `$character-cursor-pack`。需要保留状态图原色时，指定使用裁切和透明蒙版，跳过 AI 重绘。
 
-## 之前的四款独立成品
+制作过程使用 Codex 图像工具及本地构建工具；本地构建需要 Python 和 Pillow。下载成品使用无需这些工具。
 
-这些是之前发布的独立光标包。需要调整像素大小时，优先使用上面的最新版工作台。
+## 源码与文件校验
 
-| 角色 | 下载 | 预览 |
-|---|---|---|
-| 蕾塞 V1.5 | [完整包](packs/蕾塞光标-Windows-V1.5.zip) | [查看](previews/reze.png) |
-| 蕾姆 V1.2.1 | [完整包](packs/RemCursor-Windows-v1.2.1.zip) | [查看](previews/rem.png) |
-| deepseek酱 V1.5 | [完整包](packs/deepseek酱光标-样本-V1.5.zip) | [查看](previews/deepseek.png) |
-| Pochita Mini V1.5 | [完整包](packs/Pochita-Mini光标-V1.5.zip) | [查看](previews/pochita.png) |
-
-旧版包内的恢复方式不同：蕾姆 V1.2.1 的“一键恢复原状”恢复安装前备份；V1.5 的同名脚本恢复白色小号。需要清除残留放大倍率时，使用最新版工作台附带的恢复脚本。
-
-## Skills
-
-将 `skills` 下的两个文件夹放到自己的 Codex skills 目录，通常为 `~/.codex/skills/`。
-
-- [character-chibi-prep](skills/character-chibi-prep/SKILL.md)：将非 Q 版角色转换为一致的 2D Q 版形象。
-- [character-cursor-pack](skills/character-cursor-pack/SKILL.md)：制作 16 状态素材、17 个 Windows 角色映射、预览和中文安装包；仓库中的通用恢复脚本已同步本次倍率修复。
-
-示例：
-
-> 使用 $character-chibi-prep 将参考角色转换成 Q 版，再调用 $character-cursor-pack 做成完整光标包。
-
-已有 Q 版角色可直接调用光标 skill。成品状态图要求保色时使用裁切和透明蒙版，跳过 AI 重绘。生成模式使用 Codex 内置图像工具，本地构建工具需要 Python 和 Pillow。非 Q 版转 Q 版再制作光标的链路已用上面的Zero Two（零二）样本完成一次本机验证。
-
-## 工作台源码
-
-源码在 [studio](studio)，包括 Windows 后端、网页、四款透明素材和安装脚本。
-
-在 Windows PowerShell 中运行：
+工作台源码在 [studio](studio)，Skills 和配套工具在 [skills](skills)。在 Windows PowerShell 中构建工作台：
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\studio\tests\build.ps1
 ```
 
-构建结果在 `studio/package`。原生验证脚本需要 Python/Pillow 和正在运行的工作台；运行会实际修改鼠标配置，结束后恢复白色小号。分发 ZIP 的 SHA-256 见 [SHA256SUMS.txt](SHA256SUMS.txt)。
+构建结果位于 `studio/package`。安装包的 SHA-256 校验值见 [SHA256SUMS.txt](SHA256SUMS.txt)。
 
 ## 素材说明
 
-案例用于展示制作效果。角色 IP 及第三方原图权利属于各自权利人，不代表拥有商业分发授权。当前未指定项目开源许可证。
+角色 IP 和第三方原图的权利属于各自权利人。案例用于展示制作效果，不代表商业分发授权。项目当前未指定开源许可证。
