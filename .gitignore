@@ -2,3 +2,8 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
+
+studio/package/CursorStudio.exe
+studio/package/web/
+studio/package/themes/
+studio/package/*.cmd

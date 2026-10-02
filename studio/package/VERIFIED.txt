@@ -1,0 +1,10 @@
+V1.1 local validation, 2026-10-03
+Root cause reproduced: registry32 / HCURSOR32 / live cursor base128 -> physical rendering4x.
+Normalization through runtime SPI0x2029(0, IntPtr32) verified with SPI0x2028 readback32.
+DXGI Desktop Duplication captures: target32 visible31x32; target64 visible60x62.
+All17 system roles: full native pixel hashes and hotspots equal generated CUR for Reze75, Rem96, Deepseek128, Pochita192. Preview pixels equal CUR.
+Native drawing at75: max RGB difference vs exact CUR0; vs PNG composited on white1 (alpha rounding).
+Invalid writes and origins rejected. Integer size16/256 and repeat application checked.
+White24 visible9x15; default32 visible12x19; runtime base32 after both resets.
+Browser devicePixelRatio conversion, desktop1440 and mobile390 verified.
+Undocumented runtime actions feature-detected; other computers and Windows versions not tested.
