@@ -19,11 +19,11 @@ assert v.u.SystemParametersInfoW(0x2029,0,c.c_void_p(128),3)
 api('apply',{'theme':'reze','size':32})
 assert api('state')['runtimeBase']==32
 print('PASS: stale runtime128 is normalized to32 before applying32.')
-catalog=api('catalog');assert len(catalog['themes'])==4
+catalog=api('catalog');assert len(catalog['themes'])==5
 rejected({'theme':'reze','size':75},token=False);rejected({'theme':'reze','size':75},origin='https://example.com');rejected({'theme':'../','size':75});rejected({'theme':'reze','size':257});rejected({'theme':'reze','size':15})
 print('PASS: unauthenticated, cross-origin, invalid theme and size requests do not modify settings.')
 try:
- for theme,n in [('reze',75),('rem',96),('deepseek',128),('pochita',192)]:
+ for theme,n in [('reze',75),('rem',96),('deepseek',128),('pochita',192),('pinkhorn',64)]:
   data=api('apply',{'theme':theme,'size':n});assert data['state']['liveSize']==n and data['state']['runtimeBase']==32
   values=v.capture()
   for role,cid in v.ROLES.items():
@@ -41,7 +41,7 @@ try:
  data=api('reset',{'mode':'default'});assert data['state']['liveSize']==32
  import winreg
  with winreg.OpenKey(winreg.HKEY_CURRENT_USER,r'SOFTWARE\Microsoft\Accessibility') as k:assert winreg.QueryValueEx(k,'CursorSize')[0]==1 and winreg.QueryValueEx(k,'CursorType')[0]==0
- print('PASS: preview pixels equal CUR bitmap at all four sizes.');print('PASS: repeat apply keeps192; standard reset restores white32 and accessibility size1/type0.')
+ print('PASS: preview pixels equal CUR bitmap for all five characters.');print('PASS: repeat apply keeps192; standard reset restores white32 and accessibility size1/type0.')
 finally:
  data=api('reset',{'mode':'small'});assert data['state']['liveSize']==24
  print('PASS: small reset24; system left at white-small.')

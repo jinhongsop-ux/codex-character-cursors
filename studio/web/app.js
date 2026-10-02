@@ -1,5 +1,5 @@
 const $=s=>document.querySelector(s), roles=['Arrow','Help','AppStarting','Wait','Crosshair','IBeam','NWPen','No','SizeAll','SizeWE','SizeNESW','UpArrow','SizeNS','SizeNWSE','Hand','Extra'], labels=['普通选择','帮助选择','后台工作','忙碌等待','精确选择','文本选择','手写','不可用','移动','水平调整','斜向 ↗↙','候选选择','垂直调整','斜向 ↖↘','链接选择','额外状态'];
-let themes=[], theme='reze', size=128, role='Arrow', busy=false, timer, activeState;
+let themes=[], theme='reze', size=32, role='Arrow', busy=false, timer, activeState;
 async function api(path,body){const response=await fetch('/api/'+path,{method:body?'POST':'GET',headers:{'X-Studio-Token':window.STUDIO_TOKEN,...(body?{'Content-Type':'application/json'}:{})},...(body?{body:JSON.stringify(body)}:{})});const result=await response.json();if(!response.ok)throw Error(result.error||'请求失败');return result;}
 function image(r,n=size){return `/preview/${theme}/${r}/${n}`;}
 function message(text,type=''){$('#message').textContent=text;$('#message').className=type;}

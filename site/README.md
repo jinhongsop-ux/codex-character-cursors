@@ -22,6 +22,6 @@ npm run build
 
 ## 素材
 
-四款角色来自 `studio/themes`，零二来自 `site/zero-two`；基础形象来自 `previews/characters`。预览始终从原始透明图缩放，不从缩略图反复放大。
+五款角色统一来自 `studio/themes`，基础形象来自 `previews/characters`。预览始终从原始透明图缩放，不从缩略图反复放大。
 
 更新成品时，将对应 ZIP 放入 `packs`，并更新 `build.mjs` 中的版本和文件映射。

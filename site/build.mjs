@@ -11,7 +11,6 @@ for (const file of ['index.html', 'app.js', 'style.css']) {
   await copyFile(path.join(site, file), path.join(output, file));
 }
 await cp(path.join(root, 'studio/themes'), path.join(output, 'themes'), { recursive: true });
-await cp(path.join(site, 'zero-two'), path.join(output, 'themes/pinkhorn'), { recursive: true });
 await cp(path.join(root, 'previews/characters'), path.join(output, 'characters'), { recursive: true });
 
 const packs = [
@@ -24,6 +23,11 @@ const packs = [
 ];
 await mkdir(path.join(output, 'downloads'), { recursive: true });
 const downloads = {};
+const release = JSON.parse(await readFile(path.join(root, 'release/version.json'), 'utf8'));
+const fullFilename = `角色光标完整合集-V${release.version}.zip`;
+const fullRelease = {version: release.version,
+  url: `https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest/download/${encodeURIComponent(fullFilename)}`,
+  filename: fullFilename};
 for (const [id, filename, published, version] of packs) {
   const data = await readFile(path.join(root, 'packs', filename));
   await copyFile(path.join(root, 'packs', filename), path.join(output, 'downloads', published));
@@ -31,8 +35,7 @@ for (const [id, filename, published, version] of packs) {
     sha256: createHash('sha256').update(data).digest('hex') };
 }
 const themes = JSON.parse((await readFile(path.join(root, 'studio/themes/catalog.json'), 'utf8')).replace(/^\uFEFF/, ''));
-themes.push(JSON.parse((await readFile(path.join(site, 'zero-two/catalog.json'), 'utf8')).replace(/^\uFEFF/, '')));
-await writeFile(path.join(output, 'catalog.json'), JSON.stringify({ themes, downloads }));
+await writeFile(path.join(output, 'catalog.json'), JSON.stringify({ themes, downloads, fullRelease }));
 await writeFile(path.join(output, 'downloads/SHA256SUMS.txt'), Object.values(downloads)
   .map(d => `${d.sha256}  ${d.url.split('/').pop()}`).join('\n') + '\n');
 console.log(`Built public preview: ${themes.length} characters, ${packs.length} original ZIP downloads.`);

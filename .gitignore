@@ -11,3 +11,5 @@ studio/package/web/
 studio/package/themes/
 studio/package/*.cmd
 .env*
+release-output/
+.release-build/

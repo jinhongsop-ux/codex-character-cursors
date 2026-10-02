@@ -1,0 +1,46 @@
+name: Publish full Windows release
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version, for example 2.0.0'
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: cursor-release-${{ github.event.inputs.version || github.ref_name }}
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build complete Windows package
+        shell: pwsh
+        env:
+          REQUESTED_VERSION: ${{ github.event.inputs.version }}
+        run: |
+          $version=if($env:REQUESTED_VERSION){$env:REQUESTED_VERSION}else{$env:GITHUB_REF_NAME.TrimStart('v')}
+          if($version -notmatch '^\d+\.\d+\.\d+$'){throw 'Invalid version'}
+          $configured=(Get-Content release/version.json -Raw | ConvertFrom-Json).version
+          if($version -ne $configured){throw 'Update release/version.json to match the requested version before publishing'}
+          "RELEASE_TAG=v$version" >> $env:GITHUB_ENV
+          ./release/build.ps1 -Version $version
+          $package=Get-ChildItem .release-build -Filter '检查安装包.cmd' -Recurse | Select-Object -First 1
+          & $package.FullName --quiet
+          if($LASTEXITCODE -ne 0){throw 'Package verification failed'}
+      - name: Publish downloadable ZIP and checksum
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $zip=(Get-ChildItem release-output -Filter '*.zip' | Select-Object -First 1).FullName
+          gh release view $env:RELEASE_TAG --repo $env:GITHUB_REPOSITORY *> $null
+          if($LASTEXITCODE -eq 0){
+            gh release upload $env:RELEASE_TAG $zip release-output/SHA256SUMS.txt --repo $env:GITHUB_REPOSITORY --clobber
+          }else{
+            gh release create $env:RELEASE_TAG $zip release-output/SHA256SUMS.txt --repo $env:GITHUB_REPOSITORY --target $env:GITHUB_SHA --title "角色光标完整合集 $env:RELEASE_TAG" --notes-file release/notes.md --latest
+          }
+          if($LASTEXITCODE -ne 0){throw 'Release publication failed'}

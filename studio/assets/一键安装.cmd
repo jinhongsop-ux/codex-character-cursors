@@ -34,7 +34,7 @@ try {
     }
     New-Item -ItemType Directory -Path $target -Force | Out-Null
     if([IO.Path]::GetFullPath($source).TrimEnd('\') -ne [IO.Path]::GetFullPath($target).TrimEnd('\')) {
-        foreach($name in @('CursorStudio.exe','web','themes','使用说明.txt','VERIFIED.txt','启动光标工作台.cmd','一键恢复系统默认.cmd','一键恢复系统白色小号.cmd','一键安装.cmd')) {
+        foreach($name in @('CursorStudio.exe','web','themes','使用说明.txt','启动光标工作台.cmd','一键恢复系统默认.cmd','一键恢复系统白色小号.cmd','一键安装.cmd')) {
             $item=Join-Path $source $name
             if(Test-Path -LiteralPath $item) {Copy-Item -LiteralPath $item -Destination $target -Recurse -Force}
         }

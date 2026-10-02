@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Text;
 using System.Net;
@@ -128,7 +128,7 @@ public class Studio {
   else{Respond(stream,404,"text/plain",Bytes("Not found"));return;}Respond(stream,200,mime,body);
  }catch(Exception e){try{Respond(stream,400,"application/json; charset=utf-8",Bytes(Json().Serialize(new {error=e.Message})));}catch{}}}}}
  [STAThread] public static void Main(string[] args){try{try{SetProcessDpiAwarenessContext((IntPtr)(-4));}catch(EntryPointNotFoundException){SetProcessDPIAware();}
-  Directory.CreateDirectory(Home);bool created;Instance=new Mutex(true,@"Local\CharacterCursorStudio",out created);if(!created){if(Array.IndexOf(args,"--no-browser")<0){try{var existing=Json().Deserialize<Dictionary<string,object>>(File.ReadAllText(Path.Combine(Home,"session.json")));OpenBrowser(Convert.ToString(existing["url"]));}catch(Exception launchError){MessageBox.Show("已有后台实例，但打开网页失败："+launchError.Message,"光标工作台");}}return;}Themes=Json().Deserialize<Theme[]>(File.ReadAllText(Path.Combine(Base,"themes/catalog.json")));Selection=new Saved{theme="reze",size=128};try{Selection=Json().Deserialize<Saved>(File.ReadAllText(Path.Combine(Home,"selection.json")));}catch{}
+  Directory.CreateDirectory(Home);bool created;Instance=new Mutex(true,@"Local\CharacterCursorStudio",out created);if(!created){if(Array.IndexOf(args,"--no-browser")<0){try{var existing=Json().Deserialize<Dictionary<string,object>>(File.ReadAllText(Path.Combine(Home,"session.json")));OpenBrowser(Convert.ToString(existing["url"]));}catch(Exception launchError){MessageBox.Show("已有后台实例，但打开网页失败："+launchError.Message,"光标工作台");}}return;}Themes=Json().Deserialize<Theme[]>(File.ReadAllText(Path.Combine(Base,"themes/catalog.json")));Selection=new Saved{theme="reze",size=32};try{Selection=Json().Deserialize<Saved>(File.ReadAllText(Path.Combine(Home,"selection.json")));}catch{}
   Listener=new TcpListener(IPAddress.Loopback,0);Listener.Start();Origin="http://127.0.0.1:"+((IPEndPoint)Listener.LocalEndpoint).Port;
   File.WriteAllText(Path.Combine(Home,"session.json"),Json().Serialize(new {url=Origin,token=Token,pid=Process.GetCurrentProcess().Id}));
   var thread=new Thread(delegate(){while(true){try{ThreadPool.QueueUserWorkItem(Handle,Listener.AcceptTcpClient());}catch(SocketException){break;}}});thread.IsBackground=true;thread.Start();

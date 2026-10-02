@@ -2,9 +2,11 @@
 
 把喜欢的角色做成 Windows 鼠标光标。这里可以下载已经做好的皮肤，也可以使用 Codex Skills，把自己的参考图变成一套光标。
 
-[打开在线预览与下载](https://codex-character-cursors.vercel.app) · [下载合集工作台](https://codex-character-cursors.vercel.app/downloads/character-cursor-studio-v1.1.1.zip)
+[下载最新正式合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) · [打开在线预览](https://codex-character-cursors.vercel.app)
 
 在线页面可以切换五款角色、查看各状态、调整预览大小，并直接下载完整安装包。应用到 Windows 时，请使用下载包中的本地安装脚本和调节器。
+
+推荐下载 **角色光标完整合集 V2.0.0**：一个 ZIP 包含五款皮肤、本地大小调节工作台、安装与恢复脚本、制作 Skills 和中文说明。完整解压后双击 **一键安装.cmd**；使用前也可运行 **检查安装包.cmd**。Releases 中的 Source code 是源码，普通使用请选择合集 ZIP。
 
 ## 成品光标
 
@@ -28,11 +30,11 @@
 
 ## 调整光标大小
 
-[下载角色光标工作台 · V1.1.1](packs/角色光标工作台-WebUI-V1.1.1.zip)
+[下载最新完整合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest)
 
-工作台在本机浏览器中打开，内置**蕾塞、蕾姆、deepseek酱、Pochita Mini**。可以切换角色、查看深浅背景下的效果，输入 **16–256 像素**的大小，再点击 **应用到系统**。
+正式合集的工作台在本机浏览器中打开，内置**蕾塞、蕾姆、deepseek酱、Pochita Mini、Zero Two（零二）**。可以切换角色、查看深浅背景下的效果，输入 **16–256 像素**的大小，再点击 **应用到系统**。
 
-**零二的大小调节器在零二安装包内**，双击 **打开大小调节.cmd** 即可使用，需要保留解压后的文件夹。
+五款角色在同一个工作台中调整。上方表格保留各角色独立包的下载链接；需要完整功能时，优先使用正式合集。
 
 ### 安装工作台
 
@@ -62,6 +64,8 @@
 ## 用自己的角色制作光标
 
 仓库提供两个 [Codex Skills](skills)。将对应文件夹复制到自己的 Codex skills 目录，通常是 `~/.codex/skills/`。
+
+正式合集内也提供 **安装制作Skills.cmd**，可一键安装这两个 Skills，更新同名版本。
 
 | Skill | 用途 |
 |---|---|

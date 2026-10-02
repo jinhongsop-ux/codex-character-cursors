@@ -140,12 +140,16 @@ window.addEventListener('resize', () => { if (themes.length) refresh(); });
   try {
     const response = await fetch('/catalog.json');
     if (!response.ok) throw new Error('无法加载角色列表，请刷新后重试。');
-    ({ themes, downloads } = await response.json());
+    const catalog = await response.json();
+    ({ themes, downloads } = catalog);
+    $('#fullDownload').href = catalog.fullRelease.url;
+    $('#fullDownload').textContent = `下载完整合集 V${catalog.fullRelease.version} ↓`;
+    $('#fullDownload').setAttribute('download', catalog.fullRelease.filename);
     $('#themes').innerHTML = themes.map(item => `<button class="theme" data-theme="${item.id}" aria-pressed="false"><img src="/characters/${characterImages[item.id]}.png" alt=""><span><strong>${item.name}</strong><small>${downloads[item.id].version} · 16 项状态</small></span></button>`).join('');
     $('#states').innerHTML = roles.map((state, index) => `<button class="state" data-role="${state}" aria-pressed="false"><img data-image-role="${state}" alt=""><span>${labels[index]}</span></button>`).join('');
     $('#downloadsGrid').innerHTML = themes.map(item => `<article class="download-card"><img src="/characters/${characterImages[item.id]}.png" alt="${item.name}基础形象"><h3>${item.name}</h3><p>${downloads[item.id].version} · ${(downloads[item.id].bytes / 1048576).toFixed(1)} MB</p><a href="${downloads[item.id].url}" download="${downloads[item.id].filename}">下载完整安装包 ↓</a></article>`).join('');
-    $('#studioDownload').href = downloads.studio.url;
-    $('#studioDownload').download = downloads.studio.filename;
+    $('#studioDownload').href = catalog.fullRelease.url;
+    $('#studioDownload').textContent = '下载五款合集工作台与制作 Skills ↗';
     chooseTheme(theme);
   } catch (error) { message(error.message, true); }
 })();
