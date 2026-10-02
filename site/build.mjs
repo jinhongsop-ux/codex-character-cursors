@@ -8,7 +8,13 @@ const root = path.dirname(site);
 const output = path.join(site, 'public');
 await mkdir(output, { recursive: true });
 for (const file of ['index.html', 'app.js', 'style.css']) {
-  await copyFile(path.join(site, file), path.join(output, file));
+  const source = path.join(root, 'studio/web', file);
+  if (file === 'index.html') {
+    const html = (await readFile(source, 'utf8')).replace('__CURSOR_MODE__', 'online').replace('__STUDIO_TOKEN__', '');
+    await writeFile(path.join(output, file), html);
+  } else {
+    await copyFile(source, path.join(output, file));
+  }
 }
 await cp(path.join(root, 'studio/themes'), path.join(output, 'themes'), { recursive: true });
 await cp(path.join(root, 'previews/characters'), path.join(output, 'characters'), { recursive: true });

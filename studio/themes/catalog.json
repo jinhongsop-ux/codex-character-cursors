@@ -94,7 +94,15 @@
         "hy": 0.03247282608695652
       }
     ],
-    "sourceWidth": 115
+    "sourceWidth": 115,
+    "category": "人物",
+    "tags": [
+      "柔和",
+      "低干扰",
+      "浅色友好"
+    ],
+    "summary": "安静、克制，日常使用存在感适中。",
+    "accent": "#8d6aa8"
   },
   {
     "id": "rem",
@@ -191,7 +199,15 @@
         "hy": 0.04296875
       }
     ],
-    "sourceWidth": 256
+    "sourceWidth": 256,
+    "category": "人物",
+    "tags": [
+      "清爽",
+      "柔和",
+      "浅色友好"
+    ],
+    "summary": "清爽轻盈，适合长时间使用。",
+    "accent": "#6c9ec7"
   },
   {
     "id": "deepseek",
@@ -288,7 +304,15 @@
         "hy": 0.09375
       }
     ],
-    "sourceWidth": 256
+    "sourceWidth": 256,
+    "category": "吉祥物",
+    "tags": [
+      "简洁",
+      "冷色",
+      "高识别度"
+    ],
+    "summary": "冷静简洁，视觉识别更直接。",
+    "accent": "#587dd9"
   },
   {
     "id": "pochita",
@@ -385,7 +409,15 @@
         "hy": 0.09375
       }
     ],
-    "sourceWidth": 256
+    "sourceWidth": 256,
+    "category": "吉祥物",
+    "tags": [
+      "可爱",
+      "暖色",
+      "高识别度"
+    ],
+    "summary": "明亮可爱，桌面存在感更强。",
+    "accent": "#df8a37"
   },
   {
     "id": "pinkhorn",
@@ -482,6 +514,14 @@
         "hx": 0.08854166666666667,
         "hy": 0.09375
       }
-    ]
+    ],
+    "category": "人物",
+    "tags": [
+      "醒目",
+      "高识别度",
+      "深色友好"
+    ],
+    "summary": "鲜明有张力，适合更醒目的桌面。",
+    "accent": "#d56b8c"
   }
 ]

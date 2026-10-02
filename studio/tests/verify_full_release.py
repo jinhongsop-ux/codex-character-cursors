@@ -126,6 +126,36 @@ try:
     assert len(api('catalog')['themes']) == 5
     assert api('apply', {'theme':'pinkhorn','size':64})['state']['liveSize'] == 64
     print('PASS: reinstall and restart retain all five themes; no size drift.')
+    if '--browser' in sys.argv:
+        session = json.loads(session_path.read_text(encoding='utf-8-sig'))
+        def browser(command, script=None):
+            # Browser daemons can inherit a PIPE on Windows and keep it open.
+            with tempfile.TemporaryFile() as stdout, tempfile.TemporaryFile() as stderr:
+                result = subprocess.run('npx --yes agent-browser --session release-ui --json ' + command,
+                    shell=True, input=script, encoding='utf-8', stdout=stdout, stderr=stderr, timeout=45)
+                assert result.returncode == 0, 'Browser verification command failed'
+                stdout.seek(0)
+                output = json.loads(stdout.read().decode('utf-8'))
+            assert output.get('success'), output
+        browser('open ' + session['url'])
+        browser('wait --load networkidle')
+        browser('eval --stdin', '''(async()=>{
+            if(window.CURSOR_MODE!=='local')throw Error('Wrong runtime mode');
+            if(document.querySelectorAll('.catalog-card').length!==5)throw Error('Catalog missing');
+            document.querySelector('[data-id="pinkhorn"]').click();
+            const input=document.querySelector('#sizeInput');input.value=83;input.dispatchEvent(new Event('change'));
+            document.querySelector('#applyBtn').click();
+            for(let i=0;i<100;i++){if(!document.querySelector('#applyBtn').disabled)break;await new Promise(r=>setTimeout(r,100));}
+            if(!document.querySelector('#status').textContent.includes('83 px'))throw Error('Apply did not finish');
+            if(!document.querySelector('#deviceInfo').textContent.includes('83 px'))throw Error('Wrong live dimensions');
+            document.querySelector('#resetBtn').click();
+            for(let i=0;i<100;i++){if(!document.querySelector('#resetBtn').disabled)break;await new Promise(r=>setTimeout(r,100));}
+            if(!document.querySelector('#status').textContent.includes('32 px'))throw Error('Reset failed');
+            return 'UI apply83 and reset32 passed';
+        })()''')
+        assert api('state')['liveSize'] == 32
+        browser('close')
+        print('PASS: actual local UI applies Zero Two at83 and restores system32.')
 finally:
     for path, saved in registry_before.items():
         with winreg.CreateKey(winreg.HKEY_CURRENT_USER, path) as key:

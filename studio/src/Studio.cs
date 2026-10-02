@@ -14,7 +14,7 @@ using System.Windows.Forms;
 using Microsoft.Win32;
 
 public class Role { public string role; public double hx; public double hy; }
-public class Theme { public string id; public string name; public Role[] roles; public int sourceWidth; }
+public class Theme { public string id; public string name; public Role[] roles; public int sourceWidth; public string category; public string[] tags; public string summary; public string accent; }
 public class Input { public string theme; public int size; public string mode; }
 public class Saved { public string theme; public int size; }
 public class Value { public string name; public object value; public RegistryValueKind kind; }
@@ -118,7 +118,7 @@ public class Studio {
   string host;if(!heads.TryGetValue("Host",out host)||host!=new Uri(Origin).Authority){Respond(stream,403,"text/plain",Bytes("Invalid host"));return;}
   if(path.StartsWith("/api/")){string token;if(!heads.TryGetValue("X-Studio-Token",out token)||token!=Token||(heads.ContainsKey("Origin")&&heads["Origin"]!=Origin)){Respond(stream,403,"application/json",Bytes("{\"error\":\"请求未授权，请重新打开本地界面。\"}"));return;}}
   object result=null;byte[] body;string mime="application/json; charset=utf-8";
-  if(method=="GET"&&path=="/"){mime="text/html; charset=utf-8";body=Bytes(File.ReadAllText(Path.Combine(Base,"web/index.html")).Replace("__STUDIO_TOKEN__",Token));}
+  if(method=="GET"&&path=="/"){mime="text/html; charset=utf-8";body=Bytes(File.ReadAllText(Path.Combine(Base,"web/index.html")).Replace("__STUDIO_TOKEN__",Token).Replace("__CURSOR_MODE__","local"));}
   else if(method=="GET"&&path=="/app.js"){mime="application/javascript; charset=utf-8";body=File.ReadAllBytes(Path.Combine(Base,"web/app.js"));}
   else if(method=="GET"&&path=="/style.css"){mime="text/css; charset=utf-8";body=File.ReadAllBytes(Path.Combine(Base,"web/style.css"));}
   else if(method=="GET"&&path=="/api/catalog"){body=Bytes(Json().Serialize(new {themes=Themes,state=State()}));}
@@ -128,7 +128,7 @@ public class Studio {
   else{Respond(stream,404,"text/plain",Bytes("Not found"));return;}Respond(stream,200,mime,body);
  }catch(Exception e){try{Respond(stream,400,"application/json; charset=utf-8",Bytes(Json().Serialize(new {error=e.Message})));}catch{}}}}}
  [STAThread] public static void Main(string[] args){try{try{SetProcessDpiAwarenessContext((IntPtr)(-4));}catch(EntryPointNotFoundException){SetProcessDPIAware();}
-  Directory.CreateDirectory(Home);bool created;Instance=new Mutex(true,@"Local\CharacterCursorStudio",out created);if(!created){if(Array.IndexOf(args,"--no-browser")<0){try{var existing=Json().Deserialize<Dictionary<string,object>>(File.ReadAllText(Path.Combine(Home,"session.json")));OpenBrowser(Convert.ToString(existing["url"]));}catch(Exception launchError){MessageBox.Show("已有后台实例，但打开网页失败："+launchError.Message,"光标工作台");}}return;}Themes=Json().Deserialize<Theme[]>(File.ReadAllText(Path.Combine(Base,"themes/catalog.json")));Selection=new Saved{theme="reze",size=32};try{Selection=Json().Deserialize<Saved>(File.ReadAllText(Path.Combine(Home,"selection.json")));}catch{}
+  Directory.CreateDirectory(Home);bool created;using(var hash=System.Security.Cryptography.SHA256.Create()){string instanceName="Local\\CharacterCursorStudio."+BitConverter.ToString(hash.ComputeHash(Encoding.UTF8.GetBytes(Home.ToUpperInvariant()))).Replace("-","");Instance=new Mutex(true,instanceName,out created);}if(!created){if(Array.IndexOf(args,"--no-browser")<0){try{var existing=Json().Deserialize<Dictionary<string,object>>(File.ReadAllText(Path.Combine(Home,"session.json")));OpenBrowser(Convert.ToString(existing["url"]));}catch(Exception launchError){MessageBox.Show("已有后台实例，但打开网页失败："+launchError.Message,"光标工作台");}}return;}Themes=Json().Deserialize<Theme[]>(File.ReadAllText(Path.Combine(Base,"themes/catalog.json")));Selection=new Saved{theme="reze",size=32};try{Selection=Json().Deserialize<Saved>(File.ReadAllText(Path.Combine(Home,"selection.json")));}catch{}
   Listener=new TcpListener(IPAddress.Loopback,0);Listener.Start();Origin="http://127.0.0.1:"+((IPEndPoint)Listener.LocalEndpoint).Port;
   File.WriteAllText(Path.Combine(Home,"session.json"),Json().Serialize(new {url=Origin,token=Token,pid=Process.GetCurrentProcess().Id}));
   var thread=new Thread(delegate(){while(true){try{ThreadPool.QueueUserWorkItem(Handle,Listener.AcceptTcpClient());}catch(SocketException){break;}}});thread.IsBackground=true;thread.Start();

@@ -3,7 +3,9 @@ tools/
 studio/src/
 studio/tests/
 studio/package/
-studio/web/
 site/public/
 **/__pycache__/
 **/*.pyc
+.release-build/
+release-output/
+.env*
