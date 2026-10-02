@@ -523,5 +523,1075 @@
     ],
     "summary": "鲜明有张力，适合更醒目的桌面。",
     "accent": "#d56b8c"
+  },
+  {
+    "id": "frieren",
+    "name": "芙莉莲",
+    "sourceWidth": 512,
+    "roles": [
+      {
+        "role": "Arrow",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Help",
+        "hx": 0.121094,
+        "hy": 0.109375
+      },
+      {
+        "role": "AppStarting",
+        "hx": 0.125,
+        "hy": 0.125
+      },
+      {
+        "role": "Wait",
+        "hx": 0.125,
+        "hy": 0.119141
+      },
+      {
+        "role": "Crosshair",
+        "hx": 0.125,
+        "hy": 0.125
+      },
+      {
+        "role": "IBeam",
+        "hx": 0.125,
+        "hy": 0.125
+      },
+      {
+        "role": "NWPen",
+        "hx": 0.066406,
+        "hy": 0.177734
+      },
+      {
+        "role": "No",
+        "hx": 0.125,
+        "hy": 0.125
+      },
+      {
+        "role": "SizeAll",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeWE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNESW",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "UpArrow",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "SizeNS",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNWSE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "Hand",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Extra",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Pin",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Person",
+        "hx": 0.052734,
+        "hy": 0.052734
+      }
+    ],
+    "category": "人物",
+    "tags": [
+      "frieren",
+      "elf",
+      "mage",
+      "fantasy",
+      "pixel-art"
+    ],
+    "summary": "银发精灵魔法师 Frieren 的像素风 Windows 光标皮肤，保留白金长袍、红色法杖与原有动作。",
+    "accent": "#D8A04A"
+  },
+  {
+    "id": "furina",
+    "name": "芙宁娜",
+    "sourceWidth": 512,
+    "roles": [
+      {
+        "role": "Arrow",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Help",
+        "hx": 0.121094,
+        "hy": 0.109375
+      },
+      {
+        "role": "AppStarting",
+        "hx": 0.125,
+        "hy": 0.125
+      },
+      {
+        "role": "Wait",
+        "hx": 0.125,
+        "hy": 0.119141
+      },
+      {
+        "role": "Crosshair",
+        "hx": 0.125,
+        "hy": 0.125
+      },
+      {
+        "role": "IBeam",
+        "hx": 0.125,
+        "hy": 0.125
+      },
+      {
+        "role": "NWPen",
+        "hx": 0.066406,
+        "hy": 0.177734
+      },
+      {
+        "role": "No",
+        "hx": 0.125,
+        "hy": 0.125
+      },
+      {
+        "role": "SizeAll",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeWE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNESW",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "UpArrow",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "SizeNS",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNWSE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "Hand",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Extra",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Pin",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Person",
+        "hx": 0.052734,
+        "hy": 0.052734
+      }
+    ],
+    "category": "人物",
+    "tags": [
+      "furina",
+      "genshin-impact",
+      "hydro",
+      "opera",
+      "pixel-art"
+    ],
+    "summary": "以 Furina 为灵感的像素风 Windows 光标皮肤，保留蓝白礼帽、浅色卷发与深蓝演出服。",
+    "accent": "#62A7F2"
+  },
+  {
+    "id": "gojo",
+    "name": "五条悟",
+    "sourceWidth": 512,
+    "roles": [
+      {
+        "role": "Arrow",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Help",
+        "hx": 0.121094,
+        "hy": 0.109375
+      },
+      {
+        "role": "AppStarting",
+        "hx": 0.125,
+        "hy": 0.125
+      },
+      {
+        "role": "Wait",
+        "hx": 0.125,
+        "hy": 0.119141
+      },
+      {
+        "role": "Crosshair",
+        "hx": 0.125,
+        "hy": 0.125
+      },
+      {
+        "role": "IBeam",
+        "hx": 0.125,
+        "hy": 0.125
+      },
+      {
+        "role": "NWPen",
+        "hx": 0.066406,
+        "hy": 0.177734
+      },
+      {
+        "role": "No",
+        "hx": 0.125,
+        "hy": 0.125
+      },
+      {
+        "role": "SizeAll",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeWE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNESW",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "UpArrow",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "SizeNS",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNWSE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "Hand",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Extra",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Pin",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Person",
+        "hx": 0.052734,
+        "hy": 0.052734
+      }
+    ],
+    "category": "人物",
+    "tags": [
+      "gojo-satoru",
+      "jujutsu-kaisen",
+      "sorcerer",
+      "anime",
+      "pixel-art"
+    ],
+    "summary": "以 Gojo Satoru 为灵感的像素风 Windows 光标皮肤，保留白色刺发、黑色眼罩与深色制服。",
+    "accent": "#8EC8FF"
+  },
+  {
+    "id": "hachiware",
+    "name": "小八",
+    "sourceWidth": 512,
+    "roles": [
+      {
+        "role": "Arrow",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Help",
+        "hx": 0.09375,
+        "hy": 0.09375
+      },
+      {
+        "role": "AppStarting",
+        "hx": 0.097656,
+        "hy": 0.097656
+      },
+      {
+        "role": "Wait",
+        "hx": 0.097656,
+        "hy": 0.097656
+      },
+      {
+        "role": "Crosshair",
+        "hx": 0.09375,
+        "hy": 0.09375
+      },
+      {
+        "role": "IBeam",
+        "hx": 0.09375,
+        "hy": 0.097656
+      },
+      {
+        "role": "NWPen",
+        "hx": 0.035156,
+        "hy": 0.035156
+      },
+      {
+        "role": "No",
+        "hx": 0.09375,
+        "hy": 0.09375
+      },
+      {
+        "role": "SizeAll",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeWE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNESW",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "UpArrow",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "SizeNS",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNWSE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "Hand",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Extra",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Pin",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Person",
+        "hx": 0.052734,
+        "hy": 0.052734
+      }
+    ],
+    "category": "吉祥物",
+    "tags": [
+      "小八",
+      "ハチワレ",
+      "Chiikawa",
+      "蓝色",
+      "猫咪",
+      "吉祥物"
+    ],
+    "summary": "以小八的蓝色头顶、白色毛色与粉脸颊为特色，使用原宠物精灵图中的不同动作和表情制作。",
+    "accent": "#769BC0"
+  },
+  {
+    "id": "jiyi",
+    "name": "吉伊",
+    "sourceWidth": 512,
+    "roles": [
+      {
+        "role": "Arrow",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Help",
+        "hx": 0.09375,
+        "hy": 0.09375
+      },
+      {
+        "role": "AppStarting",
+        "hx": 0.097656,
+        "hy": 0.097656
+      },
+      {
+        "role": "Wait",
+        "hx": 0.097656,
+        "hy": 0.097656
+      },
+      {
+        "role": "Crosshair",
+        "hx": 0.09375,
+        "hy": 0.09375
+      },
+      {
+        "role": "IBeam",
+        "hx": 0.09375,
+        "hy": 0.097656
+      },
+      {
+        "role": "NWPen",
+        "hx": 0.035156,
+        "hy": 0.035156
+      },
+      {
+        "role": "No",
+        "hx": 0.09375,
+        "hy": 0.09375
+      },
+      {
+        "role": "SizeAll",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeWE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNESW",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "UpArrow",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "SizeNS",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNWSE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "Hand",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Extra",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Pin",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Person",
+        "hx": 0.052734,
+        "hy": 0.052734
+      }
+    ],
+    "category": "吉祥物",
+    "tags": [
+      "吉伊",
+      "ちいかわ",
+      "Chiikawa",
+      "白色",
+      "粉色",
+      "吉祥物"
+    ],
+    "summary": "以吉伊的圆润白色身形、粉色腮红与小熊挎包为特色，使用原宠物精灵图中的不同动作和表情制作。",
+    "accent": "#E7889D"
+  },
+  {
+    "id": "usagi",
+    "name": "乌萨奇",
+    "sourceWidth": 512,
+    "roles": [
+      {
+        "role": "Arrow",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Help",
+        "hx": 0.09375,
+        "hy": 0.09375
+      },
+      {
+        "role": "AppStarting",
+        "hx": 0.097656,
+        "hy": 0.097656
+      },
+      {
+        "role": "Wait",
+        "hx": 0.097656,
+        "hy": 0.097656
+      },
+      {
+        "role": "Crosshair",
+        "hx": 0.09375,
+        "hy": 0.09375
+      },
+      {
+        "role": "IBeam",
+        "hx": 0.09375,
+        "hy": 0.097656
+      },
+      {
+        "role": "NWPen",
+        "hx": 0.035156,
+        "hy": 0.035156
+      },
+      {
+        "role": "No",
+        "hx": 0.09375,
+        "hy": 0.09375
+      },
+      {
+        "role": "SizeAll",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeWE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNESW",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "UpArrow",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "SizeNS",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNWSE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "Hand",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Extra",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Pin",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Person",
+        "hx": 0.052734,
+        "hy": 0.052734
+      }
+    ],
+    "category": "吉祥物",
+    "tags": [
+      "乌萨奇",
+      "うさぎ",
+      "Chiikawa",
+      "兔子",
+      "奶油黄",
+      "吉祥物"
+    ],
+    "summary": "以乌萨奇的奶油黄色兔耳与粉色腮红为特色，使用原宠物精灵图中的不同动作和表情制作。",
+    "accent": "#E1B54F"
+  },
+  {
+    "id": "miku",
+    "name": "初音未来",
+    "sourceWidth": 512,
+    "roles": [
+      {
+        "role": "Arrow",
+        "hx": 0.064453,
+        "hy": 0.064453
+      },
+      {
+        "role": "Help",
+        "hx": 0.144531,
+        "hy": 0.177734
+      },
+      {
+        "role": "AppStarting",
+        "hx": 0.128906,
+        "hy": 0.128906
+      },
+      {
+        "role": "Wait",
+        "hx": 0.128906,
+        "hy": 0.123047
+      },
+      {
+        "role": "Crosshair",
+        "hx": 0.128906,
+        "hy": 0.126953
+      },
+      {
+        "role": "IBeam",
+        "hx": 0.128906,
+        "hy": 0.189453
+      },
+      {
+        "role": "NWPen",
+        "hx": 0.060547,
+        "hy": 0.160156
+      },
+      {
+        "role": "No",
+        "hx": 0.128906,
+        "hy": 0.128906
+      },
+      {
+        "role": "SizeAll",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeWE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNESW",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "UpArrow",
+        "hx": 0.064453,
+        "hy": 0.064453
+      },
+      {
+        "role": "SizeNS",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNWSE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "Hand",
+        "hx": 0.064453,
+        "hy": 0.064453
+      },
+      {
+        "role": "Extra",
+        "hx": 0.064453,
+        "hy": 0.064453
+      },
+      {
+        "role": "Pin",
+        "hx": 0.064453,
+        "hy": 0.064453
+      },
+      {
+        "role": "Person",
+        "hx": 0.064453,
+        "hy": 0.064453
+      }
+    ],
+    "category": "人物",
+    "tags": [
+      "初音未来",
+      "Vocaloid",
+      "双马尾",
+      "像素风"
+    ],
+    "summary": "初音未来像素角色，留着青绿色双马尾，戴粉色发夹并穿着舞台服装。",
+    "accent": "#27C9BD"
+  },
+  {
+    "id": "nezuko",
+    "name": "祢豆子",
+    "sourceWidth": 512,
+    "roles": [
+      {
+        "role": "Arrow",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Help",
+        "hx": 0.121094,
+        "hy": 0.109375
+      },
+      {
+        "role": "AppStarting",
+        "hx": 0.125,
+        "hy": 0.125
+      },
+      {
+        "role": "Wait",
+        "hx": 0.125,
+        "hy": 0.119141
+      },
+      {
+        "role": "Crosshair",
+        "hx": 0.125,
+        "hy": 0.125
+      },
+      {
+        "role": "IBeam",
+        "hx": 0.125,
+        "hy": 0.125
+      },
+      {
+        "role": "NWPen",
+        "hx": 0.066406,
+        "hy": 0.177734
+      },
+      {
+        "role": "No",
+        "hx": 0.125,
+        "hy": 0.125
+      },
+      {
+        "role": "SizeAll",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeWE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNESW",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "UpArrow",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "SizeNS",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNWSE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "Hand",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Extra",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Pin",
+        "hx": 0.052734,
+        "hy": 0.052734
+      },
+      {
+        "role": "Person",
+        "hx": 0.052734,
+        "hy": 0.052734
+      }
+    ],
+    "category": "人物",
+    "tags": [
+      "nezuko-kamado",
+      "demon-slayer",
+      "kimono",
+      "anime",
+      "pixel-art"
+    ],
+    "summary": "以 Nezuko Kamado 为灵感的像素风 Windows 光标皮肤，保留粉色和服、竹筒与橙色发梢。",
+    "accent": "#EF91B3"
+  },
+  {
+    "id": "xiaoxin",
+    "name": "小新",
+    "sourceWidth": 512,
+    "roles": [
+      {
+        "role": "Arrow",
+        "hx": 0.064453,
+        "hy": 0.064453
+      },
+      {
+        "role": "Help",
+        "hx": 0.144531,
+        "hy": 0.177734
+      },
+      {
+        "role": "AppStarting",
+        "hx": 0.128906,
+        "hy": 0.128906
+      },
+      {
+        "role": "Wait",
+        "hx": 0.128906,
+        "hy": 0.123047
+      },
+      {
+        "role": "Crosshair",
+        "hx": 0.128906,
+        "hy": 0.126953
+      },
+      {
+        "role": "IBeam",
+        "hx": 0.128906,
+        "hy": 0.189453
+      },
+      {
+        "role": "NWPen",
+        "hx": 0.060547,
+        "hy": 0.160156
+      },
+      {
+        "role": "No",
+        "hx": 0.128906,
+        "hy": 0.128906
+      },
+      {
+        "role": "SizeAll",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeWE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNESW",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "UpArrow",
+        "hx": 0.064453,
+        "hy": 0.064453
+      },
+      {
+        "role": "SizeNS",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNWSE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "Hand",
+        "hx": 0.064453,
+        "hy": 0.064453
+      },
+      {
+        "role": "Extra",
+        "hx": 0.064453,
+        "hy": 0.064453
+      },
+      {
+        "role": "Pin",
+        "hx": 0.064453,
+        "hy": 0.064453
+      },
+      {
+        "role": "Person",
+        "hx": 0.064453,
+        "hy": 0.064453
+      }
+    ],
+    "category": "人物",
+    "tags": [
+      "蜡笔小新",
+      "小新",
+      "红色上衣",
+      "像素风"
+    ],
+    "summary": "穿着经典红色上衣和黄色短裤、表情调皮的小新。",
+    "accent": "#F3CD2F"
+  },
+  {
+    "id": "hoops",
+    "name": "Hoops",
+    "sourceWidth": 512,
+    "roles": [
+      {
+        "role": "Arrow",
+        "hx": 0.064453,
+        "hy": 0.064453
+      },
+      {
+        "role": "Help",
+        "hx": 0.144531,
+        "hy": 0.177734
+      },
+      {
+        "role": "AppStarting",
+        "hx": 0.128906,
+        "hy": 0.128906
+      },
+      {
+        "role": "Wait",
+        "hx": 0.128906,
+        "hy": 0.123047
+      },
+      {
+        "role": "Crosshair",
+        "hx": 0.128906,
+        "hy": 0.126953
+      },
+      {
+        "role": "IBeam",
+        "hx": 0.128906,
+        "hy": 0.189453
+      },
+      {
+        "role": "NWPen",
+        "hx": 0.060547,
+        "hy": 0.160156
+      },
+      {
+        "role": "No",
+        "hx": 0.128906,
+        "hy": 0.128906
+      },
+      {
+        "role": "SizeAll",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeWE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNESW",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "UpArrow",
+        "hx": 0.064453,
+        "hy": 0.064453
+      },
+      {
+        "role": "SizeNS",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "SizeNWSE",
+        "hx": 0.5,
+        "hy": 0.5
+      },
+      {
+        "role": "Hand",
+        "hx": 0.064453,
+        "hy": 0.064453
+      },
+      {
+        "role": "Extra",
+        "hx": 0.064453,
+        "hy": 0.064453
+      },
+      {
+        "role": "Pin",
+        "hx": 0.064453,
+        "hy": 0.064453
+      },
+      {
+        "role": "Person",
+        "hx": 0.064453,
+        "hy": 0.064453
+      }
+    ],
+    "category": "吉祥物",
+    "tags": [
+      "篮球",
+      "银发",
+      "运动",
+      "像素风"
+    ],
+    "summary": "银发篮球吉祥物，身穿黑色球衣并抱着篮球。",
+    "accent": "#F2A13A"
   }
 ]

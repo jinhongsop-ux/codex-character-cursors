@@ -17,7 +17,7 @@ try {
         try{$hash=[BitConverter]::ToString($sha.ComputeHash([IO.File]::ReadAllBytes($path))).Replace('-','').ToLowerInvariant()}finally{$sha.Dispose()}
         if($hash -ne $file.sha256){throw "文件校验失败：$($file.path)"}
     }
-    $message="安装包完整：V$($manifest.version)，五款角色、工作台和制作Skills均已通过校验。"
+    $message="安装包完整：V$($manifest.version)，$($manifest.themes.Count)款角色、工作台和制作Skills均已通过校验。"
     Write-Output $message
     if(!$quiet){Add-Type -AssemblyName System.Windows.Forms;[void][System.Windows.Forms.MessageBox]::Show($message,'角色光标完整性检查')}
     exit 0

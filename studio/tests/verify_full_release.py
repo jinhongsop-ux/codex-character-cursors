@@ -1,7 +1,7 @@
 """Explicit Windows release integration test; preserves pre-test cursor settings.
 
 Usage: python studio/tests/verify_full_release.py <extracted release directory>
-Runs installation, reinstall, five live themes, endpoints, reset and file checks.
+Runs installation, reinstall, all live themes, endpoints, reset and file checks.
 """
 from pathlib import Path
 import ctypes as c
@@ -95,7 +95,10 @@ try:
     run('一键安装.cmd', '--quiet --no-launch')
     start()
     catalog = api('catalog')
-    assert {t['id'] for t in catalog['themes']} == {'reze', 'rem', 'deepseek', 'pochita', 'pinkhorn'}
+    expected_ids = set(json.loads((package / '文件清单.json').read_text(encoding='utf-8'))['themes'])
+    assert {t['id'] for t in catalog['themes']} == expected_ids
+    from PIL import Image
+    from io import BytesIO
     for theme in catalog['themes']:
         for pixels in (32, 64):
             data = api('apply', {'theme': theme['id'], 'size': pixels})
@@ -107,13 +110,11 @@ try:
                     assert v.image_signature(v.u.LoadCursorW(None, c.c_void_p(cid))) == v.image_signature(expected), role
                 finally:
                     v.u.DestroyCursor(expected)
-            from PIL import Image
-            from io import BytesIO
-            preview = Image.open(BytesIO(request(f'/preview/{theme["id"]}/Arrow/{pixels}'))).convert('RGBA')
-            raw = Path(values['Arrow'][0]).read_bytes()
-            bitmap = Image.frombytes('RGBA', (pixels,pixels), raw[62:62+pixels*pixels*4], 'raw','BGRA').transpose(Image.Transpose.FLIP_TOP_BOTTOM)
-            for p,q in zip(preview.get_flattened_data(),bitmap.get_flattened_data()):
-                assert p == q or p[3] == q[3] == 0
+                preview = Image.open(BytesIO(request(f'/preview/{theme["id"]}/{role}/{pixels}'))).convert('RGBA')
+                raw = Path(values[role][0]).read_bytes()
+                bitmap = Image.frombytes('RGBA', (pixels,pixels), raw[62:62+pixels*pixels*4], 'raw','BGRA').transpose(Image.Transpose.FLIP_TOP_BOTTOM)
+                for p,q in zip(preview.get_flattened_data(),bitmap.get_flattened_data()):
+                    assert p == q or p[3] == q[3] == 0, (theme['id'],role,pixels)
         print('PASS:', theme['id'], 'all 17 live roles, hotspots and preview pixels at 32/64.')
     for pixels in (16,256):
         assert api('apply', {'theme':'pinkhorn','size':pixels})['state']['liveSize'] == pixels
@@ -123,9 +124,9 @@ try:
     run('一键安装.cmd', '--quiet --no-launch')
     process.wait(timeout=10)
     start()
-    assert len(api('catalog')['themes']) == 5
+    assert {t['id'] for t in api('catalog')['themes']} == expected_ids
     assert api('apply', {'theme':'pinkhorn','size':64})['state']['liveSize'] == 64
-    print('PASS: reinstall and restart retain all five themes; no size drift.')
+    print('PASS: reinstall and restart retain all themes; no size drift.')
     if '--browser' in sys.argv:
         session = json.loads(session_path.read_text(encoding='utf-8-sig'))
         def browser(command, script=None):
@@ -141,7 +142,9 @@ try:
         browser('wait --load networkidle')
         browser('eval --stdin', '''(async()=>{
             if(window.CURSOR_MODE!=='local')throw Error('Wrong runtime mode');
-            if(document.querySelectorAll('.catalog-card').length!==5)throw Error('Catalog missing');
+            const response=await fetch('/api/catalog',{headers:{'X-Studio-Token':window.STUDIO_TOKEN}});
+            const catalog=await response.json();
+            if(document.querySelectorAll('.catalog-card').length!==catalog.themes.length)throw Error('Catalog missing');
             document.querySelector('[data-id="pinkhorn"]').click();
             const input=document.querySelector('#sizeInput');input.value=83;input.dispatchEvent(new Event('change'));
             document.querySelector('#applyBtn').click();

@@ -29,7 +29,7 @@ async function refreshWorkspace(){
   $('#roleLabel').textContent=ROLES.find(r=>r[0]===selectedRole)[1];$('#previewName').textContent=`${t.name} · ${size} × ${size} px`;$('#selectedSummary').textContent=`当前：${t.name} · ${t.category} · ${t.tags.slice(0,2).join(' / ')}`;$('#sizeInput').value=$('#sizeRange').value=size;
   document.querySelectorAll('[data-size]').forEach(b=>b.classList.toggle('active',+b.dataset.size===size));document.querySelectorAll('[data-role]').forEach(b=>{const active=b.dataset.role===selectedRole;b.classList.toggle('active',active);b.setAttribute('aria-pressed',active);b.querySelector('.check').textContent=active?'✓':'↗';});
   for(const id of ['previewImg','follower']){const img=$('#'+id);img.style.width=img.style.height=(size/window.devicePixelRatio)+'px';}
-  if(!local&&downloads[selectedId]){$('#singleDownload').href=downloads[selectedId].url;$('#singleDownload').download=downloads[selectedId].filename;}
+  if(!local){const pack=downloads[selectedId];$('#singleDownload').hidden=!pack;if(pack){$('#singleDownload').href=pack.url;$('#singleDownload').download=pack.filename;$('#singleDownload').textContent=`下载早期独立包 ${pack.version}`;}}
   try{const url=await imageFor(selectedId,selectedRole,size);if(revision===workspaceRevision)$('#previewImg').src=$('#follower').src=url;}catch(error){if(revision===workspaceRevision)status(error.message,true);}
 }
 function setSize(value){const pixels=Number(value);if(!Number.isInteger(pixels)||pixels<16||pixels>256){$('#sizeInput').value=size;status('请输入16–256之间的整数像素。',true);return false;}size=pixels;refreshWorkspace();status(local?'预览已更新，点击应用后才会修改系统。':'预览已更新，下载后在本地工作台应用所需尺寸。');return true;}

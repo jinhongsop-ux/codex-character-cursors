@@ -4,9 +4,9 @@
 
 [下载最新正式合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) · [打开在线预览](https://codex-character-cursors.vercel.app)
 
-在线页面可以切换五款角色、查看各状态、调整预览大小，并直接下载完整安装包。应用到 Windows 时，请使用下载包中的本地安装脚本和调节器。
+在线页面可以切换15款角色、查看各状态、调整预览大小，并直接下载完整安装包。应用到 Windows 时，请使用下载包中的本地安装脚本和调节器。
 
-推荐下载 **角色光标完整合集 V2.1.0**：一个 ZIP 包含五款皮肤、本地大小调节工作台、安装与恢复脚本、制作 Skills 和中文说明。完整解压后双击 **一键安装.cmd**；使用前也可运行 **检查安装包.cmd**。Releases 中的 Source code 是源码，普通使用请选择合集 ZIP。
+推荐下载 **角色光标完整合集 V2.2.0**：一个 ZIP 包含15款皮肤、本地大小调节工作台、安装与恢复脚本、制作 Skills 和中文说明。完整解压后双击 **一键安装.cmd**；使用前也可运行 **检查安装包.cmd**。Releases 中的 Source code 是源码，普通使用请选择合集 ZIP。
 
 ## 成品光标
 
@@ -14,11 +14,21 @@
 
 | 角色 | 基础形象 | 完整安装包 | 状态预览 |
 |---|:---:|---|---|
-| 蕾塞 · V1.5 | <img src="previews/characters/reze.png" alt="蕾塞基础形象" width="120"> | [下载](packs/蕾塞光标-Windows-V1.5.zip) | [查看](previews/reze.png) |
-| 蕾姆 · V1.2.1 | <img src="previews/characters/rem.png" alt="蕾姆基础形象" width="120"> | [下载](packs/RemCursor-Windows-v1.2.1.zip) | [查看](previews/rem.png) |
-| deepseek酱 · V1.5 | <img src="previews/characters/deepseek.png" alt="deepseek酱基础形象" width="120"> | [下载](packs/deepseek酱光标-样本-V1.5.zip) | [查看](previews/deepseek.png) |
-| Pochita Mini · V1.5 | <img src="previews/characters/pochita.png" alt="Pochita Mini基础形象" width="120"> | [下载](packs/Pochita-Mini光标-V1.5.zip) | [查看](previews/pochita.png) |
-| Zero Two（零二）· V1.5 | <img src="previews/characters/zero-two.png" alt="Zero Two零二基础形象" width="120"> | [下载](packs/ZeroTwo-Q版光标-Windows-V1.5.zip) | [查看](previews/pink-horn.png) |
+| 蕾塞 · V1.5 | <img src="previews/characters/reze.png" alt="蕾塞基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/reze.png) |
+| 蕾姆 · V1.2.1 | <img src="previews/characters/rem.png" alt="蕾姆基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/rem.png) |
+| deepseek酱 · V1.5 | <img src="previews/characters/deepseek.png" alt="deepseek酱基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/deepseek.png) |
+| Pochita Mini · V1.5 | <img src="previews/characters/pochita.png" alt="Pochita Mini基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/pochita.png) |
+| Zero Two（零二）· V1.5 | <img src="previews/characters/zero-two.png" alt="Zero Two零二基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/pink-horn.png) |
+| 芙莉莲 | <img src="previews/characters/frieren.png" alt="芙莉莲基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/frieren.png) |
+| 芙宁娜 | <img src="previews/characters/furina.png" alt="芙宁娜基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/furina.png) |
+| 五条悟 | <img src="previews/characters/gojo.png" alt="五条悟基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/gojo.png) |
+| 小八 | <img src="previews/characters/hachiware.png" alt="小八基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/hachiware.png) |
+| 吉伊 | <img src="previews/characters/jiyi.png" alt="吉伊基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/jiyi.png) |
+| 乌萨奇 | <img src="previews/characters/usagi.png" alt="乌萨奇基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/usagi.png) |
+| 初音未来 | <img src="previews/characters/miku.png" alt="初音未来基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/miku.png) |
+| 祢豆子 | <img src="previews/characters/nezuko.png" alt="祢豆子基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/nezuko.png) |
+| 小新 | <img src="previews/characters/xiaoxin.png" alt="小新基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/xiaoxin.png) |
+| Hoops | <img src="previews/characters/hoops.png" alt="Hoops基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/hoops.png) |
 
 ### 怎么使用
 
@@ -26,15 +36,15 @@
 2. 双击包内的 **一键安装.cmd**，按提示应用光标。
 3. 想换回系统光标时，运行包内的恢复脚本。具体选项见随包的使用说明。
 
-不同安装包的恢复选项有所区别：「恢复系统默认」切换到系统白色默认方案；「恢复安装前配置」还原备份。蕾姆旧版的「一键恢复原状」使用安装前备份。
+正式合集提供系统白色默认方案和24像素白色小号两种恢复选项，样式与大小一起恢复。
 
 ## 调整光标大小
 
 [下载最新完整合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest)
 
-正式合集的工作台在本机浏览器中打开，内置**蕾塞、蕾姆、deepseek酱、Pochita Mini、Zero Two（零二）**。可以搜索角色、按分类筛选、查看深浅背景下的效果，输入 **16–256 像素**的大小，再点击 **应用到系统**。
+正式合集的工作台在本机浏览器中打开，内置下方列出的全部15款角色。可以搜索角色、按分类筛选、查看深浅背景下的效果，输入 **16–256 像素**的大小，再点击 **应用到系统**。
 
-五款角色在同一个工作台中调整。上方表格保留各角色独立包的下载链接；需要完整功能时，优先使用正式合集。
+全部角色在同一个工作台中调整。新角色包含在正式合集中；早期独立包仍可在仓库的 packs 目录找到。
 
 ### 安装工作台
 

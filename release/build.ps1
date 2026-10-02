@@ -1,4 +1,4 @@
-param([string]$Version)
+﻿param([string]$Version)
 $ErrorActionPreference='Stop'
 $root=Split-Path -Parent $PSScriptRoot
 if(!$Version){$Version=(Get-Content -LiteralPath (Join-Path $PSScriptRoot 'version.json') -Raw -Encoding UTF8 | ConvertFrom-Json).version}
@@ -26,7 +26,12 @@ foreach($script in Get-ChildItem -LiteralPath $package -Filter '*.cmd' -Recurse)
     [IO.File]::WriteAllText($script.FullName,$text,$utf8)
 }
 $catalog=Get-Content -LiteralPath (Join-Path $package 'themes/catalog.json') -Raw -Encoding UTF8 | ConvertFrom-Json
-if($catalog.Count -ne 5){throw 'Full release must contain five characters'}
+if($catalog.Count -lt 1 -or @($catalog.id | Select-Object -Unique).Count -ne $catalog.Count){throw 'Catalog must contain unique characters'}
+$expectedRoles=@('Arrow','Help','AppStarting','Wait','Crosshair','IBeam','NWPen','No','SizeAll','SizeWE','SizeNESW','UpArrow','SizeNS','SizeNWSE','Hand','Extra','Pin','Person')
+foreach($theme in $catalog){
+    if($theme.id -notmatch '^[a-z0-9-]+$' -or $theme.roles.Count -ne 18 -or @(Compare-Object $expectedRoles @($theme.roles.role)).Count -ne 0){throw "Incomplete role map: $($theme.id)"}
+    foreach($role in $theme.roles){if($role.hx -lt 0 -or $role.hx -ge 1 -or $role.hy -lt 0 -or $role.hy -ge 1){throw "Invalid hotspot: $($theme.id)/$($role.role)"}}
+}
 foreach($theme in $catalog){foreach($role in $theme.roles){if(!(Test-Path -LiteralPath (Join-Path $package ('themes/'+$theme.id+'/'+$role.role+'.png')))){throw 'Missing role asset'}}}
 $manifest=[ordered]@{version=$Version;themes=@($catalog.id);files=@()}
 foreach($file in Get-ChildItem -LiteralPath $package -File -Recurse | Sort-Object FullName){
@@ -34,12 +39,18 @@ foreach($file in Get-ChildItem -LiteralPath $package -File -Recurse | Sort-Objec
     $manifest.files+=@{path=$relative;bytes=$file.Length;sha256=(Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash.ToLowerInvariant()}
 }
 [IO.File]::WriteAllText((Join-Path $package '文件清单.json'),($manifest | ConvertTo-Json -Depth 5),$utf8)
-Add-Type -AssemblyName System.IO.Compression.FileSystem
+Add-Type -AssemblyName System.IO.Compression,System.IO.Compression.FileSystem
 $zip=Join-Path $output ('character-cursors-full-v'+$Version+'.zip')
 if(Test-Path -LiteralPath $zip){throw "Release already exists: $zip. Use a new version or move the previous build first."}
-[IO.Compression.ZipFile]::CreateFromDirectory($package,$zip,[IO.Compression.CompressionLevel]::Optimal,$true)
+$archive=[IO.Compression.ZipFile]::Open($zip,[IO.Compression.ZipArchiveMode]::Create)
+try{
+    foreach($file in Get-ChildItem -LiteralPath $package -File -Recurse){
+        $entryName=$name+'/'+$file.FullName.Substring($package.Length+1).Replace('\','/')
+        [IO.Compression.ZipFileExtensions]::CreateEntryFromFile($archive,$file.FullName,$entryName,[IO.Compression.CompressionLevel]::Optimal) | Out-Null
+    }
+}finally{$archive.Dispose()}
 $archive=[IO.Compression.ZipFile]::OpenRead($zip)
-try{if(!($archive.Entries | Where-Object FullName -EQ ($name+'/CursorStudio.exe'))){throw 'ZIP executable missing'}}finally{$archive.Dispose()}
+try{if(!($archive.Entries | Where-Object {$_.FullName.Replace('\','/') -eq ($name+'/CursorStudio.exe')})){throw 'ZIP executable missing'}}finally{$archive.Dispose()}
 $hash=(Get-FileHash -LiteralPath $zip -Algorithm SHA256).Hash.ToLowerInvariant()
 [IO.File]::WriteAllText((Join-Path $output 'SHA256SUMS.txt'),($hash+'  '+[IO.Path]::GetFileName($zip)+"`n"),$utf8)
 Write-Output "Built $zip"
