@@ -24,7 +24,7 @@ const packs = [
 await mkdir(path.join(output, 'downloads'), { recursive: true });
 const downloads = {};
 const release = JSON.parse(await readFile(path.join(root, 'release/version.json'), 'utf8'));
-const fullFilename = `角色光标完整合集-V${release.version}.zip`;
+const fullFilename = `character-cursors-full-v${release.version}.zip`;
 const fullRelease = {version: release.version,
   url: `https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest/download/${encodeURIComponent(fullFilename)}`,
   filename: fullFilename};

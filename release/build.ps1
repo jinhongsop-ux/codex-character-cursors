@@ -35,7 +35,7 @@ foreach($file in Get-ChildItem -LiteralPath $package -File -Recurse | Sort-Objec
 }
 [IO.File]::WriteAllText((Join-Path $package '文件清单.json'),($manifest | ConvertTo-Json -Depth 5),$utf8)
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-$zip=Join-Path $output ($name+'.zip')
+$zip=Join-Path $output ('character-cursors-full-v'+$Version+'.zip')
 if(Test-Path -LiteralPath $zip){throw "Release already exists: $zip. Use a new version or move the previous build first."}
 [IO.Compression.ZipFile]::CreateFromDirectory($package,$zip,[IO.Compression.CompressionLevel]::Optimal,$true)
 $archive=[IO.Compression.ZipFile]::OpenRead($zip)
