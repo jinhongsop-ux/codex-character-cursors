@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>角色光标 · 目录与工作台</title>
+<title>角色光标 · 预览与安装工具</title>
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -18,24 +18,24 @@
 
   <section class="intro">
     <div>
-      <div class="eyebrow">CURSOR LIBRARY + LOCAL STUDIO</div>
-      <h1>先找到喜欢的角色，再把整套光标调到刚刚好。</h1>
-      <p id="introCopy">这里既是你的角色光标目录，也是本地工作台。以后新增角色，只会继续加入目录；选中任何一套，都可以查看完整状态、调整大小，再决定是否应用到 Windows。</p>
+      <div class="eyebrow">使用说明</div>
+      <h1>角色光标</h1>
+      <p id="introCopy">Windows 角色光标预览与安装工具。在角色目录中选择角色，查看各个光标状态，调整尺寸，并下载或应用整套光标。</p>
     </div>
     <div class="intro-side">
-      <b>目录会持续增加</b>
-      用搜索、分类和标签，找到喜欢的角色。<br>
-      选中一套，完整预览，再决定怎么使用。
+      <b>在线与本地版本</b>
+      在线版本用于预览和下载。<br>
+      本地版本可直接将光标应用到 Windows。
     </div>
   </section>
 
   <section class="panel library">
     <div class="section-head">
       <div>
-        <div class="eyebrow">01 · CURSOR LIBRARY</div>
-        <h2>角色光标目录</h2>
+        <div class="eyebrow">01 · 角色目录</div>
+        <h2>角色目录</h2>
       </div>
-      <p>从目录里选一套。标签用于快速发现适合自己的视觉风格，不影响真实系统功能。</p>
+      <p>选择一个角色，查看对应的光标套装。支持按角色名称、分类和标签搜索，也可以通过分类筛选。</p>
     </div>
 
     <div class="catalog-toolbar">
@@ -48,13 +48,13 @@
 
     <div class="catalog-meta">
       <span id="resultCount"></span>
-      <span>16 项贴图 · 17 个 Windows 光标角色</span>
+      <span>每套 16 项状态展示</span>
     </div>
 
     <div class="catalog-grid" id="catalogGrid"></div>
   </section>
 
-  <div class="divider-title"><span>SELECTED CURSOR · LOCAL WORKSPACE</span></div>
+  <div class="divider-title"><span>当前选择 · 光标预览</span></div>
 
   <section class="workspace" id="workspace">
     <div class="preview-card">
@@ -72,15 +72,15 @@
       <div class="stage light" id="stage" tabindex="0" aria-label="光标试用区域">
         <div class="stage-guide"></div>
         <img class="preview-img" id="previewImg" alt="当前光标预览"><img id="follower" alt="" hidden>
-        <div class="stage-caption">把鼠标移进来，可以按当前尺寸跟随试用</div>
+        <div class="stage-caption">将鼠标移入预览区域，可查看光标跟随效果</div>
         <div class="preview-name" id="previewName"></div>
       </div>
     </div>
 
     <aside class="control-card">
-      <div class="eyebrow">02 · ADJUST & APPLY</div>
-      <h3 id="controlTitle">调到看着舒服，也用着顺手</h3>
-      <p>角色光标通常比系统箭头更饱满。建议先从 24–32 px 开始，再按你的屏幕和习惯微调。</p>
+      <div class="eyebrow">02 · 光标大小</div>
+      <h3 id="controlTitle">设置光标尺寸</h3>
+      <p>尺寸表示整个光标画布，单位为屏幕物理像素，包含透明留白。推荐从 24–32 px 开始，也可输入 16–256 px 的整数尺寸。</p>
 
       <div class="size-row">
         <b>光标大小</b>
@@ -96,14 +96,14 @@
         <button data-size="96">96</button>
       </div>
 
-      <div class="helper" id="helper">这里只改变预览。点击“应用这套光标”之前，不会修改 Windows 当前设置。</div>
+      <div class="helper" id="helper">调整尺寸后，点击「应用到 Windows」才会生效。应用的是整套光标，不受当前预览状态限制。</div>
       <div class="control-spacer"></div>
-      <button class="action primary" id="applyBtn">应用这套光标</button>
-      <button class="action secondary" id="resetBtn">换回 Windows 默认</button>
-      <button class="action secondary" id="smallBtn">白色小号 · 24 px</button>
-      <a class="action secondary online-only" id="singleDownload" hidden>下载当前角色独立包</a>
-      <a class="release-link" href="https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest" target="_blank" rel="noopener">最新正式合集与使用说明 ↗</a>
-      <div class="status" id="status" role="status" aria-live="polite">当前只是预览，还没有修改系统。</div>
+      <button class="action primary" id="applyBtn">应用到 Windows</button>
+      <button class="action secondary" id="resetBtn">恢复系统白色默认 · 32 px</button>
+      <button class="action secondary" id="smallBtn">系统白色小号 · 24 px</button>
+      <a class="action secondary online-only" id="singleDownload" hidden>下载早期独立包</a>
+      <a class="release-link" href="https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest" target="_blank" rel="noopener">最新完整合集与使用说明 ↗</a>
+      <div class="status" id="status" role="status" aria-live="polite">当前仅预览，点击「应用到 Windows」后才会修改系统。</div>
 
       <details class="details">
         <summary>显示与设备信息</summary>
@@ -115,16 +115,27 @@
   <section class="states-card">
     <div class="states-head">
       <div>
-        <div class="eyebrow">03 · COMPLETE CURSOR SET</div>
-        <h2>这一套的所有状态，都在这里。</h2>
+        <div class="eyebrow">03 · 光标状态</div>
+        <h2>光标状态</h2>
       </div>
-      <p>不是只换普通箭头。选择、输入、等待、移动、缩放等主要 Windows 状态完整保留；点击任意状态即可放大预览。</p>
+      <p>点击任意状态，可在上方预览区域查看对应光标。具体显示哪一种状态，由 Windows 或正在使用的软件决定。</p>
     </div>
     <div class="states-grid" id="states"></div>
     <div class="bottom-note">
       <span id="stateCountNote"></span>
       <span>部分软件会自行绘制指针，因此可能不使用 Windows 系统光标。</span>
     </div>
+  </section>
+  <section class="panel manual" aria-labelledby="manualTitle">
+    <div class="section-head"><div><div class="eyebrow">04 · 使用说明</div><h2 id="manualTitle">使用方法</h2></div><p>完整解压安装包后，使用本地工作台应用光标。</p></div>
+    <div class="manual-grid">
+      <section class="online-only"><h3>在线预览与安装</h3><ol><li>在角色目录中选择角色。</li><li>点击不同状态，查看光标效果。</li><li>调整尺寸，并切换背景进行预览。</li><li>点击「下载完整合集」。</li><li>将压缩包完整解压到一个文件夹中。</li><li>双击文件夹内的「一键安装.cmd」。</li><li>在打开的本地工作台中选择角色和尺寸。</li><li>点击「应用到 Windows」。</li></ol><p>请勿直接在压缩包内运行安装脚本。</p></section>
+      <section class="local-only"><h3>本地使用</h3><ol><li>打开角色光标工作台。</li><li>选择角色。</li><li>点击需要查看的光标状态。</li><li>调整光标尺寸。</li><li>点击「应用到 Windows」，应用整套光标。</li></ol></section>
+      <section><h3>恢复系统光标</h3><p>在本地工作台中点击「恢复系统白色默认 · 32 px」，将系统光标恢复为白色默认样式及 32 px 画布尺寸。</p><p>也可以选择「系统白色小号 · 24 px」，切换为 24 px 的白色光标。</p><p>无需打开工作台时，可运行安装包中的「一键恢复系统默认.cmd」或「一键恢复系统白色小号.cmd」。</p><p>恢复功能不会找回安装前的自定义光标方案。</p></section>
+      <section><h3>运行要求</h3><p>本地版本适用于 Windows 10 / 11，需要系统具备 Windows PowerShell 和 .NET Framework。</p><p>使用成品无需安装 Python 或 Node，也无需联网。</p><h3>角色更新</h3><p>新增角色会加入角色目录，现有操作流程保持一致。请下载最新完整合集，以获取更新后的角色素材与功能。</p></section>
+    </div>
+    <section class="manual-notes"><h3>注意事项</h3><ul><li>光标尺寸表示整个画布尺寸，包含透明区域。不同角色、姿势的实际可见大小可能不同。</li><li>预览按屏幕物理像素换算。浏览器缩放或窗口移至不同显示器后，预览尺寸会重新计算。</li><li>部分软件会自行绘制鼠标指针，可能不会使用 Windows 系统光标。</li><li>角色素材为位图，过度放大不会增加细节，可能降低清晰度。</li><li>重新登录、切换显示设置或重新加载系统光标方案后，如果尺寸发生变化，可打开本地工作台再次应用。</li><li>恢复功能会切换为指定的白色系统光标样式和尺寸，不会找回此前使用的第三方光标方案。</li></ul></section>
+    <p class="online-only manual-download-note">部分角色提供早期独立包下载，其素材和功能可能与最新版本不同。使用最新角色素材和完整功能，请下载完整合集。</p>
   </section>
 </div>
 
