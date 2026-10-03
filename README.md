@@ -4,9 +4,9 @@
 
 [下载最新正式合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) · [打开在线预览](https://codex-character-cursors.vercel.app)
 
-在线页面可以切换15款角色、查看各状态、调整预览大小，并直接下载完整安装包。应用到 Windows 时，请使用下载包中的本地安装脚本和调节器。
+在线页面可以切换19款角色、查看各状态、调整预览大小，并直接下载完整安装包。应用到 Windows 时，请使用下载包中的本地安装脚本和调节器。
 
-推荐下载 **角色光标完整合集 V2.3.2**：一个 ZIP 包含15款皮肤、本地大小调节工作台、安装与恢复脚本、制作 Skills 和中文说明。完整解压后双击 **一键安装.cmd**；使用前也可运行 **检查安装包.cmd**。Releases 中的 Source code 是源码，普通使用请选择合集 ZIP。
+推荐下载 **角色光标完整合集 V2.4.0**：一个 ZIP 包含19款皮肤、本地大小调节工作台、安装与恢复脚本、制作 Skills 和中文说明。完整解压后双击 **一键安装.cmd**；使用前也可运行 **检查安装包.cmd**。Releases 中的 Source code 是源码，普通使用请选择合集 ZIP。
 
 每种状态都有对应的动作与表情：读书、书写、挥手、拒绝、侧蜷和趴睡。移动与窗口缩放采用人物居中、独立方向三角在四周的设计，并结合每个角色的服装、道具与性格。
 
@@ -32,6 +32,11 @@
 | 小新 | <img src="previews/characters/xiaoxin.png" alt="小新基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/xiaoxin.png) |
 | Hoops | <img src="previews/characters/hoops.png" alt="Hoops基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/hoops.png) |
 
+| 蝴蝶忍 | <img src="previews/characters/shinobu.png" alt="蝴蝶忍基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/shinobu.png) |
+| 炼狱杏寿郎 | <img src="previews/characters/rengoku.png" alt="炼狱杏寿郎基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/rengoku.png) |
+| 甘露寺密璃 | <img src="previews/characters/mitsuri.png" alt="甘露寺密璃基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/mitsuri.png) |
+| 灶门炭治郎 | <img src="previews/characters/tanjiro.png" alt="灶门炭治郎基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/tanjiro.png) |
+
 ### 怎么使用
 
 1. 下载喜欢的角色安装包，**完整解压**到一个文件夹。
@@ -44,14 +49,14 @@
 
 [下载最新完整合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest)
 
-正式合集的工作台在本机浏览器中打开，内置下方列出的全部15款角色。可以搜索角色、按分类筛选、查看深浅背景下的效果，输入 **16–256 像素**的大小，再点击 **应用到系统**。
+正式合集的工作台在本机浏览器中打开，内置下方列出的全部19款角色。可以搜索角色、按分类筛选、查看深浅背景下的效果，输入 **16–256 像素**的大小，再点击 **应用到 Windows**。
 
 全部角色在同一个工作台中调整。新角色包含在正式合集中；早期独立包仍可在仓库的 packs 目录找到。
 
 ### 安装工作台
 
 1. 完整解压工作台安装包，双击 **一键安装.cmd**。
-2. 网页打开后，选择角色和大小，点击 **应用到系统**。
+2. 网页打开后，选择角色和大小，点击 **应用到 Windows**。
 3. 以后从开始菜单打开「角色光标工作台」即可，安装后可以删除下载包的解压文件夹。
 
 也可以双击 **启动光标工作台.cmd** 便携运行；这种方式需要保留解压文件夹。使用工作台无需安装 Python 或 Node，也不需要联网，运行环境为 Windows 10/11 和 .NET Framework。

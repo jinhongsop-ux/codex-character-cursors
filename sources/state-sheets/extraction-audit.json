@@ -1,0 +1,1394 @@
+[
+  {
+    "id": "shinobu",
+    "source_sha256": "03e1378d3da3dde94201829beb18041f2233f337cb46d27f570af400b3983962",
+    "method": "non-generative crop, outside flood-fill, two-pixel edge dematting and conventional resampling",
+    "opaque_rgb_mismatch_pixels": 0,
+    "roles": [
+      {
+        "role": "Arrow",
+        "source_rect": [
+          0,
+          10,
+          207,
+          190
+        ],
+        "sprite_box": [
+          35,
+          10,
+          193,
+          177
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 899,
+        "hotspot": [
+          0.08116579341317365,
+          0.052301646706586824
+        ]
+      },
+      {
+        "role": "Help",
+        "source_rect": [
+          207,
+          10,
+          415,
+          190
+        ],
+        "sprite_box": [
+          33,
+          10,
+          187,
+          177
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 857,
+        "hotspot": [
+          0.19327750748502995,
+          0.19339446107784433
+        ]
+      },
+      {
+        "role": "AppStarting",
+        "source_rect": [
+          415,
+          10,
+          623,
+          190
+        ],
+        "sprite_box": [
+          29,
+          10,
+          190,
+          177
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 1125,
+        "hotspot": [
+          0.1845995508982036,
+          0.1689745508982036
+        ]
+      },
+      {
+        "role": "Wait",
+        "source_rect": [
+          623,
+          10,
+          831,
+          190
+        ],
+        "sprite_box": [
+          31,
+          10,
+          183,
+          177
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 933,
+        "hotspot": [
+          0.17471697230538924,
+          0.16354790419161677
+        ]
+      },
+      {
+        "role": "Crosshair",
+        "source_rect": [
+          0,
+          220,
+          207,
+          392
+        ],
+        "sprite_box": [
+          35,
+          4,
+          193,
+          171
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 907,
+        "hotspot": [
+          0.17884543413173654,
+          0.20424775449101798
+        ]
+      },
+      {
+        "role": "IBeam",
+        "source_rect": [
+          207,
+          220,
+          415,
+          392
+        ],
+        "sprite_box": [
+          31,
+          4,
+          187,
+          171
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 952,
+        "hotspot": [
+          0.14671828218562874,
+          0.17440119760479042
+        ]
+      },
+      {
+        "role": "NWPen",
+        "source_rect": [
+          415,
+          220,
+          623,
+          392
+        ],
+        "sprite_box": [
+          29,
+          4,
+          188,
+          171
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 885,
+        "hotspot": [
+          0.07378602170658682,
+          0.07400823353293413
+        ]
+      },
+      {
+        "role": "No",
+        "source_rect": [
+          623,
+          220,
+          831,
+          392
+        ],
+        "sprite_box": [
+          27,
+          4,
+          186,
+          171
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 925,
+        "hotspot": [
+          0.19588557260479042,
+          0.20424775449101798
+        ]
+      },
+      {
+        "role": "SizeAll",
+        "source_rect": [
+          0,
+          430,
+          207,
+          600
+        ],
+        "sprite_box": [
+          31,
+          2,
+          198,
+          169
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 941,
+        "hotspot": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "role": "SizeWE",
+        "source_rect": [
+          207,
+          430,
+          415,
+          600
+        ],
+        "sprite_box": [
+          28,
+          7,
+          194,
+          163
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 851,
+        "hotspot": [
+          0.5,
+          0.5000470632530121
+        ]
+      },
+      {
+        "role": "SizeNESW",
+        "source_rect": [
+          415,
+          430,
+          623,
+          600
+        ],
+        "sprite_box": [
+          26,
+          2,
+          193,
+          168
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 947,
+        "hotspot": [
+          0.5,
+          0.4992398016467066
+        ]
+      },
+      {
+        "role": "UpArrow",
+        "source_rect": [
+          623,
+          430,
+          831,
+          600
+        ],
+        "sprite_box": [
+          25,
+          2,
+          186,
+          169
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 934,
+        "hotspot": [
+          0.06792664670658682,
+          0.06315494011976047
+        ]
+      },
+      {
+        "role": "SizeNS",
+        "source_rect": [
+          0,
+          635,
+          207,
+          809
+        ],
+        "sprite_box": [
+          46,
+          1,
+          183,
+          170
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 751,
+        "hotspot": [
+          0.5001386834319526,
+          0.49999999999999994
+        ]
+      },
+      {
+        "role": "SizeNWSE",
+        "source_rect": [
+          207,
+          635,
+          415,
+          809
+        ],
+        "sprite_box": [
+          27,
+          3,
+          193,
+          170
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 986,
+        "hotspot": [
+          0.4992398016467066,
+          0.5
+        ]
+      },
+      {
+        "role": "Hand",
+        "source_rect": [
+          415,
+          635,
+          623,
+          809
+        ],
+        "sprite_box": [
+          29,
+          1,
+          188,
+          168
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 901,
+        "hotspot": [
+          0.068359375,
+          0.06858158682634731
+        ]
+      },
+      {
+        "role": "Extra",
+        "source_rect": [
+          623,
+          635,
+          831,
+          809
+        ],
+        "sprite_box": [
+          28,
+          1,
+          186,
+          168
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 882,
+        "hotspot": [
+          0.07573914670658682,
+          0.06315494011976047
+        ]
+      }
+    ],
+    "aliases": {
+      "Pin": "Extra",
+      "Person": "Extra"
+    }
+  },
+  {
+    "id": "rengoku",
+    "source_sha256": "783119df9baa8e141767906470286cc04ec76ca5feeb00457dc9c0f5eb2a28f0",
+    "method": "non-generative crop, outside flood-fill, two-pixel edge dematting and conventional resampling",
+    "opaque_rgb_mismatch_pixels": 0,
+    "roles": [
+      {
+        "role": "Arrow",
+        "source_rect": [
+          0,
+          8,
+          157,
+          141
+        ],
+        "sprite_box": [
+          23,
+          6,
+          148,
+          131
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 786,
+        "hotspot": [
+          0.054125,
+          0.054125
+        ]
+      },
+      {
+        "role": "Help",
+        "source_rect": [
+          157,
+          8,
+          314,
+          141
+        ],
+        "sprite_box": [
+          18,
+          6,
+          144,
+          130
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 810,
+        "hotspot": [
+          0.1871279761904762,
+          0.2001798115079365
+        ]
+      },
+      {
+        "role": "AppStarting",
+        "source_rect": [
+          314,
+          8,
+          471,
+          141
+        ],
+        "sprite_box": [
+          17,
+          6,
+          142,
+          131
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 803,
+        "hotspot": [
+          0.181,
+          0.17012500000000003
+        ]
+      },
+      {
+        "role": "Wait",
+        "source_rect": [
+          471,
+          8,
+          628,
+          141
+        ],
+        "sprite_box": [
+          15,
+          6,
+          140,
+          131
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 777,
+        "hotspot": [
+          0.1955,
+          0.1955
+        ]
+      },
+      {
+        "role": "Crosshair",
+        "source_rect": [
+          0,
+          167,
+          157,
+          297
+        ],
+        "sprite_box": [
+          23,
+          2,
+          148,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 829,
+        "hotspot": [
+          0.1665,
+          0.206375
+        ]
+      },
+      {
+        "role": "IBeam",
+        "source_rect": [
+          157,
+          167,
+          314,
+          297
+        ],
+        "sprite_box": [
+          19,
+          2,
+          143,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 781,
+        "hotspot": [
+          0.18490625,
+          0.206375
+        ]
+      },
+      {
+        "role": "NWPen",
+        "source_rect": [
+          314,
+          167,
+          471,
+          297
+        ],
+        "sprite_box": [
+          17,
+          2,
+          142,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 727,
+        "hotspot": [
+          0.054125,
+          0.068625
+        ]
+      },
+      {
+        "role": "No",
+        "source_rect": [
+          471,
+          167,
+          628,
+          297
+        ],
+        "sprite_box": [
+          15,
+          2,
+          140,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 816,
+        "hotspot": [
+          0.1955,
+          0.206375
+        ]
+      },
+      {
+        "role": "SizeAll",
+        "source_rect": [
+          0,
+          320,
+          157,
+          449
+        ],
+        "sprite_box": [
+          23,
+          3,
+          149,
+          129
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 621,
+        "hotspot": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "role": "SizeWE",
+        "source_rect": [
+          157,
+          320,
+          314,
+          449
+        ],
+        "sprite_box": [
+          19,
+          10,
+          144,
+          123
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 672,
+        "hotspot": [
+          0.5,
+          0.49946875
+        ]
+      },
+      {
+        "role": "SizeNESW",
+        "source_rect": [
+          314,
+          320,
+          471,
+          449
+        ],
+        "sprite_box": [
+          17,
+          3,
+          142,
+          128
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 792,
+        "hotspot": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "role": "UpArrow",
+        "source_rect": [
+          471,
+          320,
+          628,
+          449
+        ],
+        "sprite_box": [
+          15,
+          3,
+          140,
+          129
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 754,
+        "hotspot": [
+          0.05078125,
+          0.06125992063492063
+        ]
+      },
+      {
+        "role": "SizeNS",
+        "source_rect": [
+          0,
+          476,
+          157,
+          604
+        ],
+        "sprite_box": [
+          23,
+          2,
+          149,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 654,
+        "hotspot": [
+          0.5,
+          0.5003100198412698
+        ]
+      },
+      {
+        "role": "SizeNWSE",
+        "source_rect": [
+          157,
+          476,
+          314,
+          604
+        ],
+        "sprite_box": [
+          19,
+          2,
+          144,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 828,
+        "hotspot": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "role": "Hand",
+        "source_rect": [
+          314,
+          476,
+          471,
+          604
+        ],
+        "sprite_box": [
+          17,
+          2,
+          142,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 822,
+        "hotspot": [
+          0.054125,
+          0.054125
+        ]
+      },
+      {
+        "role": "Extra",
+        "source_rect": [
+          471,
+          476,
+          628,
+          604
+        ],
+        "sprite_box": [
+          15,
+          2,
+          140,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 778,
+        "hotspot": [
+          0.046875,
+          0.061375
+        ]
+      }
+    ],
+    "aliases": {
+      "Pin": "Extra",
+      "Person": "Extra"
+    }
+  },
+  {
+    "id": "mitsuri",
+    "source_sha256": "a4e9866a408cd8db52bc34bb447200974a0b643593605080b9cb7bd1b5ef2007",
+    "method": "non-generative crop, outside flood-fill, two-pixel edge dematting and conventional resampling",
+    "opaque_rgb_mismatch_pixels": 0,
+    "roles": [
+      {
+        "role": "Arrow",
+        "source_rect": [
+          0,
+          7,
+          156,
+          140
+        ],
+        "sprite_box": [
+          23,
+          6,
+          148,
+          131
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 697,
+        "hotspot": [
+          0.054125,
+          0.054125
+        ]
+      },
+      {
+        "role": "Help",
+        "source_rect": [
+          156,
+          7,
+          313,
+          140
+        ],
+        "sprite_box": [
+          19,
+          6,
+          145,
+          131
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 681,
+        "hotspot": [
+          0.18353174603174602,
+          0.1982266865079365
+        ]
+      },
+      {
+        "role": "AppStarting",
+        "source_rect": [
+          313,
+          7,
+          469,
+          140
+        ],
+        "sprite_box": [
+          18,
+          6,
+          143,
+          131
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 773,
+        "hotspot": [
+          0.1665,
+          0.1665
+        ]
+      },
+      {
+        "role": "Wait",
+        "source_rect": [
+          469,
+          7,
+          626,
+          140
+        ],
+        "sprite_box": [
+          17,
+          6,
+          142,
+          131
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 774,
+        "hotspot": [
+          0.18825,
+          0.1955
+        ]
+      },
+      {
+        "role": "Crosshair",
+        "source_rect": [
+          0,
+          166,
+          156,
+          295
+        ],
+        "sprite_box": [
+          23,
+          2,
+          148,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 744,
+        "hotspot": [
+          0.162875,
+          0.20275
+        ]
+      },
+      {
+        "role": "IBeam",
+        "source_rect": [
+          156,
+          166,
+          313,
+          295
+        ],
+        "sprite_box": [
+          20,
+          2,
+          144,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 753,
+        "hotspot": [
+          0.18128125,
+          0.20275
+        ]
+      },
+      {
+        "role": "NWPen",
+        "source_rect": [
+          313,
+          166,
+          469,
+          295
+        ],
+        "sprite_box": [
+          18,
+          2,
+          143,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 663,
+        "hotspot": [
+          0.054125,
+          0.068625
+        ]
+      },
+      {
+        "role": "No",
+        "source_rect": [
+          469,
+          166,
+          626,
+          295
+        ],
+        "sprite_box": [
+          17,
+          2,
+          142,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 620,
+        "hotspot": [
+          0.18825,
+          0.20275
+        ]
+      },
+      {
+        "role": "SizeAll",
+        "source_rect": [
+          0,
+          319,
+          156,
+          448
+        ],
+        "sprite_box": [
+          23,
+          3,
+          148,
+          129
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 705,
+        "hotspot": [
+          0.5003100198412698,
+          0.5
+        ]
+      },
+      {
+        "role": "SizeWE",
+        "source_rect": [
+          156,
+          319,
+          313,
+          448
+        ],
+        "sprite_box": [
+          20,
+          8,
+          145,
+          123
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 581,
+        "hotspot": [
+          0.5,
+          0.49890625
+        ]
+      },
+      {
+        "role": "SizeNESW",
+        "source_rect": [
+          313,
+          319,
+          469,
+          448
+        ],
+        "sprite_box": [
+          18,
+          3,
+          143,
+          129
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 798,
+        "hotspot": [
+          0.5003100198412698,
+          0.5
+        ]
+      },
+      {
+        "role": "UpArrow",
+        "source_rect": [
+          469,
+          319,
+          626,
+          448
+        ],
+        "sprite_box": [
+          17,
+          3,
+          142,
+          129
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 626,
+        "hotspot": [
+          0.05078125,
+          0.06125992063492063
+        ]
+      },
+      {
+        "role": "SizeNS",
+        "source_rect": [
+          0,
+          475,
+          156,
+          603
+        ],
+        "sprite_box": [
+          24,
+          2,
+          148,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 525,
+        "hotspot": [
+          0.50028125,
+          0.5
+        ]
+      },
+      {
+        "role": "SizeNWSE",
+        "source_rect": [
+          156,
+          475,
+          313,
+          603
+        ],
+        "sprite_box": [
+          20,
+          2,
+          145,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 748,
+        "hotspot": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "role": "Hand",
+        "source_rect": [
+          313,
+          475,
+          469,
+          603
+        ],
+        "sprite_box": [
+          18,
+          2,
+          143,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 654,
+        "hotspot": [
+          0.054125,
+          0.054125
+        ]
+      },
+      {
+        "role": "Extra",
+        "source_rect": [
+          469,
+          475,
+          626,
+          603
+        ],
+        "sprite_box": [
+          17,
+          2,
+          142,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 692,
+        "hotspot": [
+          0.046875,
+          0.061375
+        ]
+      }
+    ],
+    "aliases": {
+      "Pin": "Extra",
+      "Person": "Extra"
+    }
+  },
+  {
+    "id": "tanjiro",
+    "source_sha256": "84d09e2ff6ca777843f8ed26fb94163305648d6b125dd9d8a765deec9e11422e",
+    "method": "non-generative crop, outside flood-fill, two-pixel edge dematting and conventional resampling",
+    "opaque_rgb_mismatch_pixels": 0,
+    "roles": [
+      {
+        "role": "Arrow",
+        "source_rect": [
+          0,
+          7,
+          157,
+          139
+        ],
+        "sprite_box": [
+          23,
+          5,
+          147,
+          130
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 623,
+        "hotspot": [
+          0.05803125,
+          0.054125
+        ]
+      },
+      {
+        "role": "Help",
+        "source_rect": [
+          157,
+          7,
+          314,
+          139
+        ],
+        "sprite_box": [
+          22,
+          5,
+          139,
+          130
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 622,
+        "hotspot": [
+          0.19942187500000003,
+          0.199125
+        ]
+      },
+      {
+        "role": "AppStarting",
+        "source_rect": [
+          314,
+          7,
+          471,
+          139
+        ],
+        "sprite_box": [
+          17,
+          5,
+          140,
+          130
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 689,
+        "hotspot": [
+          0.17598437500000003,
+          0.17012500000000003
+        ]
+      },
+      {
+        "role": "Wait",
+        "source_rect": [
+          471,
+          7,
+          629,
+          139
+        ],
+        "sprite_box": [
+          16,
+          5,
+          136,
+          130
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 632,
+        "hotspot": [
+          0.20945312500000002,
+          0.199125
+        ]
+      },
+      {
+        "role": "Crosshair",
+        "source_rect": [
+          0,
+          163,
+          157,
+          294
+        ],
+        "sprite_box": [
+          23,
+          5,
+          147,
+          128
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 622,
+        "hotspot": [
+          0.16746471774193547,
+          0.2006048387096774
+        ]
+      },
+      {
+        "role": "IBeam",
+        "source_rect": [
+          157,
+          163,
+          314,
+          294
+        ],
+        "sprite_box": [
+          19,
+          3,
+          141,
+          128
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 688,
+        "hotspot": [
+          0.190765625,
+          0.20275
+        ]
+      },
+      {
+        "role": "NWPen",
+        "source_rect": [
+          314,
+          163,
+          471,
+          294
+        ],
+        "sprite_box": [
+          17,
+          3,
+          139,
+          128
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 624,
+        "hotspot": [
+          0.063890625,
+          0.068625
+        ]
+      },
+      {
+        "role": "No",
+        "source_rect": [
+          471,
+          163,
+          629,
+          294
+        ],
+        "sprite_box": [
+          16,
+          3,
+          139,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 646,
+        "hotspot": [
+          0.19695060483870966,
+          0.2040070564516129
+        ]
+      },
+      {
+        "role": "SizeAll",
+        "source_rect": [
+          0,
+          319,
+          157,
+          447
+        ],
+        "sprite_box": [
+          23,
+          2,
+          149,
+          128
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 645,
+        "hotspot": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "role": "SizeWE",
+        "source_rect": [
+          157,
+          319,
+          314,
+          447
+        ],
+        "sprite_box": [
+          19,
+          12,
+          144,
+          119
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 603,
+        "hotspot": [
+          0.5,
+          0.499203125
+        ]
+      },
+      {
+        "role": "SizeNESW",
+        "source_rect": [
+          314,
+          319,
+          471,
+          447
+        ],
+        "sprite_box": [
+          17,
+          2,
+          142,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 638,
+        "hotspot": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "role": "UpArrow",
+        "source_rect": [
+          471,
+          319,
+          629,
+          447
+        ],
+        "sprite_box": [
+          16,
+          2,
+          137,
+          128
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 655,
+        "hotspot": [
+          0.064453125,
+          0.06845238095238096
+        ]
+      },
+      {
+        "role": "SizeNS",
+        "source_rect": [
+          0,
+          474,
+          157,
+          604
+        ],
+        "sprite_box": [
+          34,
+          1,
+          136,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 496,
+        "hotspot": [
+          0.49962797619047616,
+          0.5
+        ]
+      },
+      {
+        "role": "SizeNWSE",
+        "source_rect": [
+          157,
+          474,
+          314,
+          604
+        ],
+        "sprite_box": [
+          19,
+          2,
+          144,
+          127
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 631,
+        "hotspot": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "role": "Hand",
+        "source_rect": [
+          314,
+          474,
+          471,
+          604
+        ],
+        "sprite_box": [
+          19,
+          1,
+          139,
+          126
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 672,
+        "hotspot": [
+          0.071703125,
+          0.061375
+        ]
+      },
+      {
+        "role": "Extra",
+        "source_rect": [
+          471,
+          474,
+          629,
+          604
+        ],
+        "sprite_box": [
+          15,
+          1,
+          139,
+          126
+        ],
+        "opaque_rgb_mismatch_pixels": 0,
+        "edge_pixels_unmatted": 620,
+        "hotspot": [
+          0.05078125,
+          0.061375
+        ]
+      }
+    ],
+    "aliases": {
+      "Pin": "Extra",
+      "Person": "Extra"
+    }
+  }
+]
