@@ -11,7 +11,7 @@ try {
     $codexDirectory=if($env:CODEX_HOME){$env:CODEX_HOME}else{Join-Path $env:USERPROFILE '.codex'}
     $target=Join-Path $codexDirectory 'skills'
     New-Item -ItemType Directory -Path $target -Force | Out-Null
-    foreach($name in @('character-chibi-prep','character-cursor-state-designer','character-cursor-pack')){
+    foreach($name in @('character-chibi-prep','character-cursor-state-designer','character-cursor-personality-designer','character-cursor-pack')){
         $source=Join-Path $root ('Skills/'+$name)
         if(!(Test-Path -LiteralPath (Join-Path $source 'SKILL.md'))){throw "缺少Skill：$name，请完整解压安装包。"}
         Copy-Item -LiteralPath $source -Destination $target -Recurse -Force

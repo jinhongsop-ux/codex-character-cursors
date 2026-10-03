@@ -28,7 +28,7 @@ Windows重新登录或重载方案后，若尺寸变化，请打开工作台重�
 工作台中也有这两种恢复按钮。关闭网页不会退出后台服务；右下角托盘菜单可以退出，退出会保留当前已应用的光标。
 
 四、用自己的角色制作
-包内Skills目录包含character-chibi-prep、character-cursor-state-designer和character-cursor-pack。
+包内Skills目录包含character-chibi-prep、character-cursor-state-designer、character-cursor-personality-designer和character-cursor-pack。
 运行“安装制作Skills.cmd”，复制到当前用户Codex的skills目录；若设置了CODEX_HOME，将使用该目录。
 此操作会更新同名Skills。必要时重新打开Codex，以便识别Skills。
 已有Q版图可直接调用character-cursor-pack；非Q版图先调用character-chibi-prep，确认形象后制作光标。
@@ -49,3 +49,5 @@ Windows 10/11，Windows PowerShell和.NET Framework；普通使用无需管理�
 源码和Skills：https://github.com/jinhongsop-ux/codex-character-cursors
 
 角色IP和第三方原图的权利属于各自权利人，本合集不代表商业分发授权。
+
+新增角色优先使用character-cursor-personality-designer：联网调查性格，选择五套参考中的合适动作，再生成16状态图；旧固定蕾塞模板Skill保留。

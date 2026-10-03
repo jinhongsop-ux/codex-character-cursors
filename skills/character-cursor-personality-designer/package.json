@@ -1,0 +1,21 @@
+{
+  "name": "character-cursor-personality-designer",
+  "version": "1.2.0",
+  "type": "image-generation-skill",
+  "entry": "SKILL.md",
+  "bundled_reference": "references/cursor_pose_reference.png",
+  "default_states": 16,
+  "windows_system_roles": 17,
+  "extra_aliases": [
+    "Arrow",
+    "Pin",
+    "Person"
+  ],
+  "pose_templates": [
+    "reze",
+    "shinobu",
+    "rengoku",
+    "mitsuri",
+    "tanjiro"
+  ]
+}

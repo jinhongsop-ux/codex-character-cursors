@@ -6,7 +6,7 @@
 
 在线页面可以切换23款角色、查看各状态、调整预览大小，并直接下载完整安装包。应用到 Windows 时，请使用下载包中的本地安装脚本和调节器。
 
-推荐下载 **角色光标完整合集 V2.5.0**：一个 ZIP 包含23款皮肤、本地大小调节工作台、安装与恢复脚本、制作 Skills 和中文说明。完整解压后双击 **一键安装.cmd**；使用前也可运行 **检查安装包.cmd**。Releases 中的 Source code 是源码，普通使用请选择合集 ZIP。
+推荐下载 **角色光标完整合集 V2.5.1**：一个 ZIP 包含23款皮肤、本地大小调节工作台、安装与恢复脚本、制作 Skills 和中文说明。完整解压后双击 **一键安装.cmd**；使用前也可运行 **检查安装包.cmd**。Releases 中的 Source code 是源码，普通使用请选择合集 ZIP。
 
 每种状态都有对应的动作与表情：读书、书写、挥手、拒绝、侧蜷和趴睡。移动与窗口缩放采用人物居中、独立方向三角在四周的设计，并结合每个角色的服装、道具与性格。
 
@@ -85,19 +85,20 @@
 
 ## 用自己的角色制作光标
 
-仓库提供三个 [Codex Skills](skills)。将对应文件夹复制到自己的 Codex skills 目录，通常是 `~/.codex/skills/`。
+仓库提供四个 [Codex Skills](skills)。将对应文件夹复制到自己的 Codex skills 目录，通常是 `~/.codex/skills/`。
 
-正式合集内也提供 **安装制作Skills.cmd**，可一键安装这三个 Skills，更新同名版本。
+正式合集内也提供 **安装制作Skills.cmd**，可一键安装这四个 Skills，更新同名版本。
 
 | Skill | 用途 |
 |---|---|
 | [character-chibi-prep](skills/character-chibi-prep/SKILL.md) | 把动漫、漫画等非 Q 版参考角色转换为 2D Q 版基础形象。 |
+| [character-cursor-personality-designer](skills/character-cursor-personality-designer/SKILL.md) | 推荐：联网调查性格，从五套动作模板选择并复刻新角色的16状态图。 |
 | [character-cursor-state-designer](skills/character-cursor-state-designer/SKILL.md) | 按固定16格模板复刻新角色的动作、表情和构图。 |
 | [character-cursor-pack](skills/character-cursor-pack/SKILL.md) | 制作角色光标，输出 16 项状态贴图、17 个 Windows 光标角色映射、预览和中文安装包。 |
 
 上传参考图后，可以对 Codex 说：
 
-> 使用 $character-chibi-prep 把这个角色转换成 Q 版，确认形象后，再使用 $character-cursor-pack 制作 Windows 光标皮肤。
+> 使用 $character-cursor-personality-designer 调查这个角色的性格，选择合适的动作模板制作16状态图，再使用 $character-cursor-pack 制作 Windows 光标皮肤。
 
 已经有 Q 版形象或完整状态图时，可以直接调用 `$character-cursor-pack`。需要保留状态图原色时，指定使用裁切和透明蒙版，跳过 AI 重绘。
 

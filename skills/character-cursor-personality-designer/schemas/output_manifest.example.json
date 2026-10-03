@@ -1,0 +1,122 @@
+{
+  "skill": "character-cursor-personality-designer",
+  "canvas_px": 512,
+  "background": "transparent",
+  "states": [
+    {
+      "index": 1,
+      "state": "普通选择",
+      "role": "Arrow",
+      "file": "states/01_normal_select.png"
+    },
+    {
+      "index": 2,
+      "state": "帮助选择",
+      "role": "Help",
+      "file": "states/02_help_select.png"
+    },
+    {
+      "index": 3,
+      "state": "后台工作",
+      "role": "AppStarting",
+      "file": "states/03_working_in_background.png"
+    },
+    {
+      "index": 4,
+      "state": "忙碌等待",
+      "role": "Wait",
+      "file": "states/04_busy.png"
+    },
+    {
+      "index": 5,
+      "state": "精确选择",
+      "role": "Crosshair",
+      "file": "states/05_precision_select.png"
+    },
+    {
+      "index": 6,
+      "state": "文字输入",
+      "role": "IBeam",
+      "file": "states/06_text_select.png"
+    },
+    {
+      "index": 7,
+      "state": "手写",
+      "role": "NWPen",
+      "file": "states/07_handwriting.png"
+    },
+    {
+      "index": 8,
+      "state": "不可用",
+      "role": "No",
+      "file": "states/08_unavailable.png"
+    },
+    {
+      "index": 9,
+      "state": "移动",
+      "role": "SizeAll",
+      "file": "states/09_move.png"
+    },
+    {
+      "index": 10,
+      "state": "水平调整",
+      "role": "SizeWE",
+      "file": "states/10_horizontal_resize.png"
+    },
+    {
+      "index": 11,
+      "state": "斜向调整 ↗↙",
+      "role": "SizeNESW",
+      "file": "states/11_diagonal_resize_1.png"
+    },
+    {
+      "index": 12,
+      "state": "候选选择",
+      "role": "UpArrow",
+      "file": "states/12_alternate_select.png"
+    },
+    {
+      "index": 13,
+      "state": "垂直调整",
+      "role": "SizeNS",
+      "file": "states/13_vertical_resize.png"
+    },
+    {
+      "index": 14,
+      "state": "斜向调整 ↖↘",
+      "role": "SizeNWSE",
+      "file": "states/14_diagonal_resize_2.png"
+    },
+    {
+      "index": 15,
+      "state": "链接选择",
+      "role": "Hand",
+      "file": "states/15_link_select.png"
+    },
+    {
+      "index": 16,
+      "state": "额外状态",
+      "role": "Extra",
+      "file": "states/16_extra.png"
+    }
+  ],
+  "system_roles": {
+    "Arrow": "states/01_normal_select.png",
+    "Help": "states/02_help_select.png",
+    "AppStarting": "states/03_working_in_background.png",
+    "Wait": "states/04_busy.png",
+    "Crosshair": "states/05_precision_select.png",
+    "IBeam": "states/06_text_select.png",
+    "NWPen": "states/07_handwriting.png",
+    "No": "states/08_unavailable.png",
+    "SizeAll": "states/09_move.png",
+    "SizeWE": "states/10_horizontal_resize.png",
+    "SizeNESW": "states/11_diagonal_resize_1.png",
+    "UpArrow": "states/12_alternate_select.png",
+    "SizeNS": "states/13_vertical_resize.png",
+    "SizeNWSE": "states/14_diagonal_resize_2.png",
+    "Hand": "states/15_link_select.png",
+    "Pin": "states/16_extra.png",
+    "Person": "states/16_extra.png"
+  }
+}
