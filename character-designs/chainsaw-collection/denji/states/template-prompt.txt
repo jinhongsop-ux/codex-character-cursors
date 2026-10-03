@@ -1,0 +1,20 @@
+Generate a complete 4x4 sixteen-state 2D chibi cursor character sheet. FIRST reference is original character identity. SECOND purple-haired template determines EXACT poses, expressions, short 2-head-tall cartoon proportions, dark outline and layout. Replace ONLY identity and costume in that template. Do not copy purple hair, green eyes, skirt, bare thighs or stockings. Keep complete natural anatomy and correct perspective. No toy joints, stands, scenery, labels, gold/white sticker rims, glows or shadows. True transparent background.
+Exact row-major poses:
+1 side-facing forward leaning, head tilted, both hands together near knees, half-lidded open smile, top-left triangle.
+2 torso and head tilt with BOTH hands behind back, eyes up curious small round mouth, top-left question.
+3 compact upright BOTH hands together in front, tired waiting half-lidded eyes, top-left spinner.
+4 upright arms down tired blank gaze, top-left hourglass.
+5 one hand托腮 supporting chin and cheek, other forearm supporting elbow across chest, top-left cross.
+6 LEFT-facing side-seated legs forward, hands typing low horizontal keyboard across lap, focused, top-left I-beam. No tall laptop display.
+7 standing BOTH hands on hips, chin lifted HEAD TILTED BACK looking UP, confident, top-left pen nib. NOT holding pen.
+8 standing arms down lowered brows shaded eye band displeased, top-left prohibition.
+9 front CROSS-LEGGED seated BOTH hands pressed to cheeks happy open mouth, FOUR SEPARATE outward triangles above below left right.
+10 standing narrow shoulders tucked, BOTH hands behind back, torso/head slightly tilted bashful eyes, separate outward triangles left right.
+11 side-seated torso/pelvis facing LEFT, one hand grounded beside hip, head modestly turns toward viewer showing THREE QUARTER SIDE FACE with far eye narrower, neck emerges naturally from collar aligned with shoulders. Not a symmetrical front face attached to backwards torso; no180degree neck twist. Calm smile, separate top-right/bottom-left outward triangles.
+12 standing one hand on cheek other hip, single wink mild smile, top-left triangle.
+13 very low horizontal PRONE belly lying head LEFT feet RIGHT, face on forearms HALF-OPEN lazy eyes, full feet, separate above below triangles.
+14 diagonal seated legs crossing in front, one hand knee and other supports floor BEHIND, half-lidded smile, separate top-left/bottom-right triangles. Different from11.
+15 standing palm UP hand extended LEFT inviting, other hand HIP, open smile, top-left triangle; NOT waving upright palm.
+16 exact duplicate1 leaning smile, top-left triangle.
+Symbols same scale/position/angles as template, separate and legible. All character hair, hands, feet complete. Maintain consistent identity, FULL-LENGTH TROUSERS in ALL cells. Keep 4x4 evenly spaced generous cell margins.
+CHARACTER IDENTITY: Denji HUMAN form: messy short spiky golden-yellow hair, warm amber-brown eyes normal pupils, sharp triangular teeth on smiles. WHITE collared shirt sleeves ROLLED to elbows, black necktie, WHITE belt silver buckle, BLACK FULL LENGTH TROUSERS to ankles, WHITE HIGH TOP sneakers with RED outlines/soles and side red circle. No jacket, horns, chainsaw head, purple hair, skirt, shorts or thigh gaps. Playful expression but template poses fixed. Symbols muted golden ochre.

@@ -4,9 +4,9 @@
 
 [下载最新正式合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) · [打开在线预览](https://codex-character-cursors.vercel.app)
 
-在线页面可以切换19款角色、查看各状态、调整预览大小，并直接下载完整安装包。应用到 Windows 时，请使用下载包中的本地安装脚本和调节器。
+在线页面可以切换23款角色、查看各状态、调整预览大小，并直接下载完整安装包。应用到 Windows 时，请使用下载包中的本地安装脚本和调节器。
 
-推荐下载 **角色光标完整合集 V2.4.0**：一个 ZIP 包含19款皮肤、本地大小调节工作台、安装与恢复脚本、制作 Skills 和中文说明。完整解压后双击 **一键安装.cmd**；使用前也可运行 **检查安装包.cmd**。Releases 中的 Source code 是源码，普通使用请选择合集 ZIP。
+推荐下载 **角色光标完整合集 V2.5.0**：一个 ZIP 包含23款皮肤、本地大小调节工作台、安装与恢复脚本、制作 Skills 和中文说明。完整解压后双击 **一键安装.cmd**；使用前也可运行 **检查安装包.cmd**。Releases 中的 Source code 是源码，普通使用请选择合集 ZIP。
 
 每种状态都有对应的动作与表情：读书、书写、挥手、拒绝、侧蜷和趴睡。移动与窗口缩放采用人物居中、独立方向三角在四周的设计，并结合每个角色的服装、道具与性格。
 
@@ -31,11 +31,16 @@
 | 祢豆子 | <img src="previews/characters/nezuko.png" alt="祢豆子基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/nezuko.png) |
 | 小新 | <img src="previews/characters/xiaoxin.png" alt="小新基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/xiaoxin.png) |
 | Hoops | <img src="previews/characters/hoops.png" alt="Hoops基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/hoops.png) |
-
 | 蝴蝶忍 | <img src="previews/characters/shinobu.png" alt="蝴蝶忍基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/shinobu.png) |
 | 炼狱杏寿郎 | <img src="previews/characters/rengoku.png" alt="炼狱杏寿郎基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/rengoku.png) |
 | 甘露寺密璃 | <img src="previews/characters/mitsuri.png" alt="甘露寺密璃基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/mitsuri.png) |
 | 灶门炭治郎 | <img src="previews/characters/tanjiro.png" alt="灶门炭治郎基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/tanjiro.png) |
+
+| 玛奇玛 | <img src="previews/characters/makima.png" alt="玛奇玛基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/makima.png) |
+| 帕瓦 | <img src="previews/characters/power.png" alt="帕瓦基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/power.png) |
+| 早川秋 | <img src="previews/characters/aki.png" alt="早川秋基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/aki.png) |
+| 电次 | <img src="previews/characters/denji.png" alt="电次基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/denji.png) |
+
 
 ### 怎么使用
 
@@ -49,7 +54,7 @@
 
 [下载最新完整合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest)
 
-正式合集的工作台在本机浏览器中打开，内置下方列出的全部19款角色。可以搜索角色、按分类筛选、查看深浅背景下的效果，输入 **16–256 像素**的大小，再点击 **应用到 Windows**。
+正式合集的工作台在本机浏览器中打开，内置下方列出的全部23款角色。可以搜索角色、按分类筛选、查看深浅背景下的效果，输入 **16–256 像素**的大小，再点击 **应用到 Windows**。
 
 全部角色在同一个工作台中调整。新角色包含在正式合集中；早期独立包仍可在仓库的 packs 目录找到。
 
@@ -80,13 +85,14 @@
 
 ## 用自己的角色制作光标
 
-仓库提供两个 [Codex Skills](skills)。将对应文件夹复制到自己的 Codex skills 目录，通常是 `~/.codex/skills/`。
+仓库提供三个 [Codex Skills](skills)。将对应文件夹复制到自己的 Codex skills 目录，通常是 `~/.codex/skills/`。
 
-正式合集内也提供 **安装制作Skills.cmd**，可一键安装这两个 Skills，更新同名版本。
+正式合集内也提供 **安装制作Skills.cmd**，可一键安装这三个 Skills，更新同名版本。
 
 | Skill | 用途 |
 |---|---|
 | [character-chibi-prep](skills/character-chibi-prep/SKILL.md) | 把动漫、漫画等非 Q 版参考角色转换为 2D Q 版基础形象。 |
+| [character-cursor-state-designer](skills/character-cursor-state-designer/SKILL.md) | 按固定16格模板复刻新角色的动作、表情和构图。 |
 | [character-cursor-pack](skills/character-cursor-pack/SKILL.md) | 制作角色光标，输出 16 项状态贴图、17 个 Windows 光标角色映射、预览和中文安装包。 |
 
 上传参考图后，可以对 Codex 说：

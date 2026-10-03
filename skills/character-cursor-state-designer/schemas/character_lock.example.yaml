@@ -1,0 +1,42 @@
+character_name: "runtime_target"
+source_images:
+  - "<user supplied image>"
+identity_priority: "highest"
+immutable:
+  hair:
+    color: "describe exact visible hue"
+    length: ""
+    bangs_parting: ""
+    tied_sections: ""
+    signature_details: []
+  eyes:
+    color: ""
+    shape: ""
+    iris_pupil_pattern: ""
+    special_details: []
+  face:
+    skin_tone: ""
+    marks: []
+    age_presentation: ""
+  clothing:
+    upper: ""
+    neckwear: ""
+    lower: ""
+    legs: ""
+    shoes: ""
+    signature_colors: []
+  accessories: []
+  signature_props: []
+  silhouette_notes: []
+template_locked:
+  - "pose, expression, limb direction and framing from each reference cell"
+  - "head/body proportion and dark outline from template"
+flexible:
+  - "minor cloth folds"
+  - "cursor-state symbols"
+forbidden_drift:
+  - "generic replacement hairstyle"
+  - "eye recolor or loss of special iris motif"
+  - "costume redesign"
+  - "missing or invented signature accessory"
+  - "palette remap to bundled pose reference"

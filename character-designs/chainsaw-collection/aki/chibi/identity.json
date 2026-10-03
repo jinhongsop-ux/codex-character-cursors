@@ -1,0 +1,17 @@
+{
+  "reference_paths": [
+    "source/reference.png"
+  ],
+  "identity_image": "chibi/identity.png",
+  "locked_features": [
+    "blue-black asymmetrical fringe and upright short topknot",
+    "blue-gray eyes and black ear stud",
+    "black suit and white shirt, narrow black tie",
+    "sheathed katana and black-white sneakers",
+    "reserved expression"
+  ],
+  "palette": "Colors derived from the supplied figure photo; converted artwork is not pixel-identical.",
+  "style": "2D anime chibi, approximately2–3 heads tall, dark outlines, restrained flat/cel shading",
+  "generation_method": "built-in image_gen; figure photograph converted to2D chibi before pose sheet generation",
+  "qa_notes": "Reviewed identity, colors, full-body completeness and real opaque alpha composites; preserve original existing Reze skin."
+}

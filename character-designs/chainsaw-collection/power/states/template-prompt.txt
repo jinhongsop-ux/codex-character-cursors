@@ -1,0 +1,21 @@
+Create a 4x4 sixteen-state cursor artwork proof sheet. The FIRST attached photo defines Power's identity ONLY. The SECOND attached purple-haired Reze sheet is the EXACT pose, expression and composition template. The THIRD attached Power chibi is an identity helper only; use the simpler, shorter 2-head-tall proportions and flat dark outline style of the SECOND template instead of its detailed taller rendering.
+Replace the purple-haired girl in EACH template cell with Power, preserving each cell's pose, head tilt, torso rotation, hands, crossed legs, facial emotion, eye direction and functional symbol placement as closely as possible. Do not freely invent new poses.
+POWER IDENTITY ALL CELLS: pale warm blonde LONG hair and long central diagonal fringe, two red horns, red eyes with yellow cross pupils, sharp fang teeth when smiling; navy open jacket over white shirt, narrow black tie, black cropped trousers, red white-trimmed shoes. No purple hair, no green eyes, no skirt or stockings. Hair length and both horns consistent. Flat cute 2D cartoon, no 3D toy joints or stand.
+EXACT ROW-MAJOR CELLS:
+1 slight side-facing forward lean, tilted head, both hands together near knees, half-lidded open smiling mouth; top-left triangle.
+2 head AND upper body tilted inquisitively, BOTH hands behind back, small round mouth, eyes glance upward; question mark top-left.
+3 upright compact standing BOTH hands together in front, half-lidded tired gaze; ring spinner top-left.
+4 upright standing arms hanging down, tired blank gaze; hourglass top-left.
+5 standing one hand supporting cheek/chin, other arm folded under it; thoughtful half-lidded eyes; cross top-left.
+6 seated SIDE PROFILE facing image LEFT, legs forward, both hands typing on low horizontal KEYBOARD in lap, focused; I-beam top-left. No upright laptop display.
+7 standing BOTH hands on hips, chin distinctly lifted, head slightly tilted BACK, looking UP with confident slight smile; nib top-left. NOT writing with a pen.
+8 standing arms down, displeased lowered brow, dark shading over eyes; prohibition top-left.
+9 FRONT cross-legged seated BOTH palms pressed to cheeks, happy open mouth; FOUR separate outward triangles above below left right.
+10 narrow standing BOTH hands behind back, shoulders tucked, tilted body and head, bashful gaze; separate left right outward triangles.
+11 SIDE/BACK seated body turned away, one hand supporting on ground, LOOKING BACK over shoulder with tilted head, quiet smile; separate top-right and bottom-left outward triangles.
+12 standing one hand against cheek, other near hip, wink soft smile; top-left triangle. Alternate Select.
+13 VERY LOW horizontal PRONE belly lying head LEFT feet RIGHT, chin supported on forearms, half-open lazy eyes, entire shoes visible; triangles above below. NOT curled sleeping.
+14 diagonally seated with crossed/overlapping legs in front, one hand at knee OTHER supports behind on floor, half-lidded smile; top-left and bottom-right separate outward triangles. DIFFERENT from11.
+15 upright standing one hand extended toward image LEFT PALM UP in inviting gesture, other hand on hip, open happy mouth; top-left triangle. NOT upright-palm wave.
+16 exact repeat cell1 forward leaning pose and expression; top-left triangle. Extra.
+Match template symbol sizes, angles, spacing and dark single outlines. Icon fill muted red from Power palette, spinner light gray. NO cream/gold/white sticker outer rim, NO glow or drop shadow. Keep all 16 complete hair tips, horns, hands and feet with generous separation; 4x4 regular cell centers. No text or labels. Transparent background. This is an art preview sheet, not installation.
