@@ -15,12 +15,14 @@ foreach($entry in @('一键安装.cmd','一键恢复系统默认.cmd','一键恢
 Copy-Item -LiteralPath (Join-Path $root 'skills') -Destination (Join-Path $package 'Skills') -Recurse
 Copy-Item -LiteralPath (Join-Path $root 'previews/characters') -Destination (Join-Path $package '基础形象') -Recurse
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot '检查安装包.cmd'),(Join-Path $PSScriptRoot '安装制作Skills.cmd') -Destination $package
-$designRoot=Join-Path $root 'character-designs/chainsaw-collection'
+$designRoot=Join-Path $root 'character-designs'
 if(Test-Path -LiteralPath $designRoot){
-    foreach($character in Get-ChildItem -LiteralPath $designRoot -Directory){
+    foreach($collection in Get-ChildItem -LiteralPath $designRoot -Directory){
+    foreach($character in Get-ChildItem -LiteralPath $collection.FullName -Directory){
         $dest=Join-Path $package ('角色设计参考/'+$character.Name)
         New-Item -ItemType Directory -Path $dest -Force | Out-Null
         foreach($dir in @('source','chibi')){Copy-Item -LiteralPath (Join-Path $character.FullName $dir) -Destination $dest -Recurse}
+    }
     }
 }
 $utf8=New-Object Text.UTF8Encoding($false)

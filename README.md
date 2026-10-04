@@ -4,9 +4,9 @@
 
 [下载最新正式合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) · [打开在线预览](https://codex-character-cursors.vercel.app)
 
-在线页面可以切换23款角色、查看各状态、调整预览大小，并直接下载完整安装包。应用到 Windows 时，请使用下载包中的本地安装脚本和调节器。
+在线页面可以切换30款角色、查看各状态、调整预览大小，并直接下载完整安装包。应用到 Windows 时，请使用下载包中的本地安装脚本和调节器。
 
-推荐下载 **角色光标完整合集 V2.5.1**：一个 ZIP 包含23款皮肤、本地大小调节工作台、安装与恢复脚本、制作 Skills 和中文说明。完整解压后双击 **一键安装.cmd**；使用前也可运行 **检查安装包.cmd**。Releases 中的 Source code 是源码，普通使用请选择合集 ZIP。
+推荐下载 **角色光标完整合集 V2.6.0**：一个 ZIP 包含30款皮肤、本地大小调节工作台、安装与恢复脚本、制作 Skills 和中文说明。完整解压后双击 **一键安装.cmd**；使用前也可运行 **检查安装包.cmd**。Releases 中的 Source code 是源码，普通使用请选择合集 ZIP。
 
 每种状态都有对应的动作与表情：读书、书写、挥手、拒绝、侧蜷和趴睡。移动与窗口缩放采用人物居中、独立方向三角在四周的设计，并结合每个角色的服装、道具与性格。
 
@@ -35,12 +35,17 @@
 | 炼狱杏寿郎 | <img src="previews/characters/rengoku.png" alt="炼狱杏寿郎基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/rengoku.png) |
 | 甘露寺密璃 | <img src="previews/characters/mitsuri.png" alt="甘露寺密璃基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/mitsuri.png) |
 | 灶门炭治郎 | <img src="previews/characters/tanjiro.png" alt="灶门炭治郎基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/tanjiro.png) |
-
 | 玛奇玛 | <img src="previews/characters/makima.png" alt="玛奇玛基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/makima.png) |
 | 帕瓦 | <img src="previews/characters/power.png" alt="帕瓦基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/power.png) |
 | 早川秋 | <img src="previews/characters/aki.png" alt="早川秋基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/aki.png) |
 | 电次 | <img src="previews/characters/denji.png" alt="电次基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/denji.png) |
-
+| 漩涡鸣人 | <img src="previews/characters/naruto.png" alt="漩涡鸣人基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/naruto.png) |
+| 宇智波佐助 | <img src="previews/characters/sasuke.png" alt="宇智波佐助基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/sasuke.png) |
+| 日向雏田 | <img src="previews/characters/hinata.png" alt="日向雏田基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/hinata.png) |
+| 我爱罗 | <img src="previews/characters/gaara.png" alt="我爱罗基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/gaara.png) |
+| 波风水门 | <img src="previews/characters/minato.png" alt="波风水门基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/minato.png) |
+| 旗木卡卡西 | <img src="previews/characters/kakashi.png" alt="旗木卡卡西基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/kakashi.png) |
+| 春野樱 | <img src="previews/characters/sakura.png" alt="春野樱基础形象" width="120"> | [下载合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest) | [查看](previews/sakura.png) |
 
 ### 怎么使用
 
@@ -54,7 +59,7 @@
 
 [下载最新完整合集](https://github.com/jinhongsop-ux/codex-character-cursors/releases/latest)
 
-正式合集的工作台在本机浏览器中打开，内置下方列出的全部23款角色。可以搜索角色、按分类筛选、查看深浅背景下的效果，输入 **16–256 像素**的大小，再点击 **应用到 Windows**。
+正式合集的工作台在本机浏览器中打开，内置下方列出的全部30款角色。可以搜索角色、按分类筛选、查看深浅背景下的效果，输入 **16–256 像素**的大小，再点击 **应用到 Windows**。
 
 全部角色在同一个工作台中调整。新角色包含在正式合集中；早期独立包仍可在仓库的 packs 目录找到。
 
